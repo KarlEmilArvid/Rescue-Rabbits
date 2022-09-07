@@ -1,8 +1,8 @@
+import facebook from "../../assets/facebook.svg";
+import insta from "../../assets/insta.svg";
+import linkedin from "../../assets/linkedin.svg";
+import twitter from "../../assets/twitter.svg";
 import "./Footer.scss";
-import facebook from "../../assets/facebook.svg"
-import twitter from "../../assets/twitter.svg"
-import insta from "../../assets/insta.svg"
-import linkedin from "../../assets/linkedin.svg"
 
 const Footer = () => {
   return (
@@ -30,7 +30,7 @@ const Footer = () => {
           </a>
         </div>
       </section>
-      <section>
+      <section className="service">
         <h2>Kundtjänst</h2>
         <p>Hur funkar det?</p>
         <p>Frågor och svar</p>
