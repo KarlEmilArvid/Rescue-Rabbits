@@ -33,9 +33,9 @@ const Hero = ({ animals }: Props) => {
           </span>
         </div>
       </h1>
-      {/* {firstThreeInAnimals.map((animal) => (
+      {firstThreeInAnimals.map((animal) => (
         <AnimalCard animal={animal} />
-      ))} */}
+      ))}
       <article>
         <p></p>
       </article>

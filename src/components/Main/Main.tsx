@@ -16,7 +16,6 @@ const Main = ({ animals }: Props) => {
     ];
     return uniqueType;
   });
-  console.log(types);
   return (
     <main className="main">
       <section className="search-field">
