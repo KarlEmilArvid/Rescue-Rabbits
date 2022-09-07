@@ -8,13 +8,33 @@
   justify-content: center;
   color: $grey-color;
   position: sticky;
+  top: 0;
+  background-color: $white-color;
+  z-index: 2;
+  .header-content {
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 6rem;
+  }
   &:before {
     content: "";
     position: absolute;
     background-color: $grey-color;
-    bottom: 0;
+    bottom: -1px;
     width: 100vw;
     height: 1px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: $white-color;
+    bottom: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 0;
   }
   figure {
     display: flex;

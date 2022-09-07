@@ -1,4 +1,5 @@
 import { useState } from "react";
+import searchIcon from "../../assets/searchIcon.svg";
 import { Animal } from "../../models/data";
 import AnimalCard from "../AnimalCard/AnimalCard";
 import "./Main.scss";
@@ -19,8 +20,12 @@ const Main = ({ animals }: Props) => {
   return (
     <main className="main">
       <section className="search-field">
-        <input type="text" />
+        <section className="search-wrapper">
+          <input type="text" placeholder="Sök på Plats" />
+          <img className="search-icon" src={searchIcon} alt="" />
+        </section>
         <select>
+          <option value="">select pet</option>
           {types.map((type) => (
             <option value={type.type}>{type.type}</option>
           ))}

@@ -1,3 +1,13 @@
+@import "../../App.scss";
+
+%search {
+  height: 100%;
+  background-color: #f0f0f0;
+  border: none;
+  border-bottom: 2px solid #42424291;
+  font-size: $fs-text;
+}
+
 .animal-list {
   display: flex;
   justify-content: center;
@@ -5,8 +15,27 @@
   flex-wrap: wrap;
 }
 .main {
-  margin: 2rem;
+  margin-top: 4rem;
 }
 .search-field {
   display: flex;
+  gap: 2rem;
+  height: 2.5rem;
+  input {
+    width: 18rem;
+    @extend %search;
+  }
+  select {
+    width: 10rem;
+    @extend %search;
+  }
+  .search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .search-icon {
+      position: absolute;
+      right: 0;
+    }
+  }
 }
