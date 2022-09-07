@@ -21,19 +21,23 @@ const Overlay = ({ animals }: Props) => {
           </figure>
         </header>
         <main className="overlay__main">
-          <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" />
+          <img className="animalInfo__img" src="https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" />
           <section className="animalInfo">
-            <h2>Lossan</h2>
-            <p className="age">Ålder</p>
-            <div className="location">
-              <figure>
-                <img src={locationPin} alt="" />
+            <h2 className="animalInfo__name">Lossan</h2>
+            <p className="animalInfo__age">1 år</p>
+            <div className="animalInfo__location">
+              <figure className="animalInfo__locationPin">
+                <img className="animalInfo__locationPin" src={locationPin} alt="" />
               </figure>
-              <p className="place">Plats</p>
+              <p className="animalInfo__place">Karlstad</p>
             </div>
+            <p className="animalInfo__description">Puppy kitty ipsum dolor sit good dog foot stick canary. Teeth Mittens grooming vaccine walk swimming nest good boy furry tongue heel furry treats fish. E toys polydactyl meow.</p>
           </section>
         </main>
-        <footer className="overlay__footer"></footer>
+        <footer className="overlay__footer">
+          <p className="interestedCount">X personer är intresserade av Y</p>
+          <button className="button">Intresseanmälan</button>
+        </footer>
       </section>
     </section>
   );

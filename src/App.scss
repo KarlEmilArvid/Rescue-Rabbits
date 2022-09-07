@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
 $grey-color: #50585b;
 $white-color: #f0f0f0;
 $blue-color: #5e9fff;
@@ -26,4 +28,15 @@ body {
 a {
   text-decoration: none;
   color: $grey-color;
+}
+
+.button {
+  background-color: $blue-color;
+  font-size: 1.5rem;
+  padding: 0.7rem;
+  font-weight: 300;
+  color: $white-color;
+  line-height: 29px;
+  border: 1px solid $blue-color;
+  border-radius: 5px;
 }
