@@ -8,3 +8,7 @@ export interface Animal {
   image: string;
   id: number;
 }
+
+export interface TypeArray {
+  type: string;
+}

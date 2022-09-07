@@ -1,7 +1,14 @@
-// import AnimalCard from "../AnimalCard/AnimalCard";
+import { Animal } from "../../models/data";
+import AnimalCard from "../AnimalCard/AnimalCard";
 import "./Hero.scss";
 
-const Hero = () => {
+interface Props {
+  animals: Animal[];
+  //    handleClick:
+}
+
+const Hero = ({ animals }: Props) => {
+  let firstThreeInAnimals = animals.slice(0, 3);
   return (
     <section className="hero">
       <h1>
@@ -26,9 +33,9 @@ const Hero = () => {
           </span>
         </div>
       </h1>
-      <div className="test"></div>
-      <div className="test"></div>
-      <div className="test"></div>
+      {/* {firstThreeInAnimals.map((animal) => (
+        <AnimalCard animal={animal} />
+      ))} */}
       <article>
         <p></p>
       </article>

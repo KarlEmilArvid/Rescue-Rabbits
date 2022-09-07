@@ -1,6 +1,12 @@
 .animal-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main {
+  margin: 2rem;
+}
+.search-field {
+  display: flex;
 }

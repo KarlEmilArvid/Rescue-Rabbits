@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
+      <Hero animals={animals} />
       <Main animals={animals} />
       <Overlay animals={animals} />
       <Main animals={animals}/>
