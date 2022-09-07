@@ -1,22 +1,25 @@
-import {useState} from "react"
-import "./Main.scss"
-import AnimalGrid from '../AnimalGrid/AnimalGrid'
-import {Animal} from '../../models/data'
-import jsonData from '../../data/animals.json'
+import { Animal } from "../../models/data";
+import AnimalCard from "../AnimalCard/AnimalCard";
+import "./Main.scss";
 
-const Main = () => {
-  const [animals, clickAnimals] = useState<Animal[]>(jsonData.animals)
+interface Props {
+  animals: Animal[];
+  //    handleClick:
+}
 
+const Main = ({ animals }: Props) => {
   return (
     <main>
       <section>
         <input type="text" />
         <select>{}</select>
       </section>
-      <AnimalGrid animals={animals}/>
+      {animals.map((animal) => (
+        <AnimalCard animal={animal} />
+      ))}
       <button>läs in fler</button>
     </main>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
