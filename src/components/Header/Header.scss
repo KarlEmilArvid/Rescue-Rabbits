@@ -6,15 +6,26 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  color: $grey-color;
+  position: sticky;
+  figure {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  img {
+    width: 80%;
+  }
   h1 {
     flex: 1;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.6rem;
     margin-left: 1rem;
     font-size: $fs-header;
-    font-weight: 600;
+    font-weight: 500;
   }
   a {
     justify-content: flex-end;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.7rem;
+    font-size: $fs-s-header;
   }
 }

@@ -3,7 +3,16 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  border-top: 0.5px solid $grey-color;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    left: -5vw;
+    width: 100vw;
+    height: 2px;
+  }
   .adress {
     .phone {
       padding-top: 1rem;
