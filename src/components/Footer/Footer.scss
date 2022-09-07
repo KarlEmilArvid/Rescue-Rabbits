@@ -1,6 +1,8 @@
 @import "../../App.scss";
 
 .footer {
+  padding-top: 1rem;
+  color: $grey-color;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -15,7 +17,24 @@
   }
   .adress {
     .phone {
+  border-top: 0.5px solid $grey-color;
+  line-height: 30px;
+   h2{
+    font-size: 1rem;
+  }
+  .phone {
+    padding-top: 1rem;
+  }
+  .social-media{
+    text-align: center;
+    div {
       padding-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    h2 {
+      font-size: 2rem;
     }
   }
+  
 }
