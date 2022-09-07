@@ -12,12 +12,14 @@ import "./App.scss";
 
 function App() {
   const [animals, setAnimals] = useState<Animal[]>(jsonData.animals);
+
   return (
     <div className="App">
       <Header />
       <Hero />
       <Main animals={animals} />
       <Overlay animals={animals} />
+      <Main animals={animals}/>
       <Footer />
     </div>
   );
