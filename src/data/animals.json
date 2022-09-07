@@ -1,0 +1,124 @@
+{
+  "animals": [
+    {
+      "name": "Diesel",
+      "type": "Hund",
+      "age": 3,
+      "location": "Borlänge",
+      "desc": "",
+      "adopted": false,
+      "img": "https://images.unsplash.com/photo-1575859431774-2e57ed632664?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 1
+    },
+    {
+      "name": "Fuzzy",
+      "type": "Katt",
+      "age": 8,
+      "location": "Sunne",
+      "desc": "",
+      "adopted": false,
+      "img": "https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 2
+    },
+    {
+      "name": "Polly",
+      "type": "Papegoja",
+      "age": 15,
+      "location": "Vålberg",
+      "desc": "",
+      "adopted": false,
+      "img": "https://images.unsplash.com/photo-1544923408-75c5cef46f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFycm90fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 3
+    },
+    {
+      "name": "Snickers",
+      "type": "Marsvin",
+      "age": 1,
+      "location": "Borås",
+      "desc": "",
+      "adopted": false,
+      "img": "https://images.unsplash.com/photo-1618252903592-2b8c90c43a6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Z3VpbmVhJTIwcGlnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 4
+    },
+    {
+      "name": "Porkchop",
+      "type": "Minigris",
+      "age": 4,
+      "location": "Säffle",
+      "desc": "",
+      "adopted": false,
+      "img": "https://images.unsplash.com/photo-1585668678537-98f7d5e9d731?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1pbmklMjBwaWd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "id": 5
+    },
+    {
+      "name": "Dino",
+      "type": "Hund",
+      "age": 10,
+      "location": "Trollhättan",
+      "desc": "",
+      "adopted": false,
+      "img": "https://images.unsplash.com/photo-1597586755950-3e029f817855?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aHVuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 6
+    },
+    {
+      "name": "Saga",
+      "type": "Hund",
+      "age": 4,
+      "location": "Göteborg",
+      "desc": "",
+      "adopted": false,
+      "img": "https://images.unsplash.com/photo-1599744975877-53aaa14cf55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGh1bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "id": 7
+    },
+    {
+      "name": "Pumba",
+      "type": "Hund",
+      "age": 5,
+      "location": "Trelleborg",
+      "desc": "",
+      "adopted": false,
+      "img": "https://images.unsplash.com/photo-1613214360285-06ab9197797c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fGh1bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "id": 8
+    },
+    {
+      "name": "Loppan",
+      "type": "Katt",
+      "age": 0,
+      "location": "Göteborg",
+      "desc": "Good Boy park lazy dog walk kibble Scooby snacks licks canary. Maine Coon Cat walk catch water dog slobber chew scratcher ID tag litter tuxedo dog house lazy cat park.",
+      "adopted": false,
+      "img": "https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 9
+    },
+    {
+      "name": "Simba",
+      "type": "Katt",
+      "age": 3,
+      "location": "Mora",
+      "desc": "Dinnertime fetch throw feathers fleas tongue lazy cat lick throw kitten parrot hamster wag tail aquarium chew heel good boy lick feathers cockatiel. Wet Nose food ferret vaccine finch vaccination Scooby snacks string wagging barky tail head good boy pet gate meow good boy.",
+      "adopted": false,
+      "img": "https://images.unsplash.com/photo-1569591159212-b02ea8a9f239?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 10
+    },
+    {
+      "name": "Popcorn",
+      "type": "Marsvin",
+      "age": 1,
+      "location": "Solna",
+      "desc": "Walk bird harness wet nose meow harness grooming water dog lol catz water bedding toys bird seed fetch lazy cat. Parakeet scratcher brush biscuit lick dog tooth walk food lazy cat biscuit. Cockatiel Snowball kitten Rover ferret puppy.",
+      "adopted": false,
+      "img": "https://images.unsplash.com/photo-1655527291171-73c4677c3281?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fGd1aW5lYSUyMHBpZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 11
+    },
+    {
+      "name": "Polar",
+      "type": "Hund",
+      "age": 4,
+      "location": "Umeå",
+      "desc": "Dinnertime fetch throw feathers fleas tongue lazy cat lick throw kitten parrot hamster wag tail aquarium chew heel good boy lick feathers cockatiel. Wet Nose food ferret vaccine finch vaccination Scooby snacks string wagging barky tail head good boy pet gate meow good boy.",
+      "adopted": false,
+      "img": "https://images.unsplash.com/photo-1529429617124-95b109e86bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 12
+    }
+  ]
+}

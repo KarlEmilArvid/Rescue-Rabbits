@@ -1,0 +1,23 @@
+$grey-color: #50585b;
+$white-color: #f0f0f0;
+$blue-color: #5e9fff;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: $white-color;
+}
+
+.App {
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 90%;
+}
+
+a {
+  text-decoration: none;
+  color: $grey-color;
+}
