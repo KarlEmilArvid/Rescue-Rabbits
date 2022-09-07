@@ -1,0 +1,74 @@
+.card {
+    position: relative;
+    width: 16rem;
+    height: 22rem;
+    margin: 2rem;
+    box-shadow: 0px 2px 6px 0px #676767;
+    position: relative;
+    border-radius: 5% 5% 0 0;
+
+    :hover {
+      cursor: pointer;
+    }
+}
+
+.text-block {
+    display: grid;
+    grid-template-areas: 
+    "name . location"
+    "age . ."
+    "read-more . date";
+    position: absolute;
+    bottom: 0;
+    height: 7rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 5% 5% 0 0;
+}
+
+.name {
+    font-size: 1.8rem;
+    grid-area: name;
+    margin: 0;
+    text-decoration: underline;
+    text-align: start;
+}
+
+.location {
+    grid-area: location;
+    text-align: end;
+    margin: 0.8rem;
+}
+
+.age {
+    grid-area: age;
+    text-align: start;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 0.6rem;
+}
+
+.read-more {
+    grid-area: read-more;
+    color: white;
+    background-color: transparent;
+    margin: 0.5rem;
+    border-radius: 10%;
+    max-width: 5rem;
+}
+
+.date {
+    grid-area: date;
+    text-align: end;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 0.8rem;
+    margin-right: 0.6rem;
+}
+
+.card img {
+    border-radius: 5% 5% 0 0;
+    width: 100%;
+    height: 100%;
+}

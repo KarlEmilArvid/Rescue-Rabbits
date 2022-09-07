@@ -1,24 +1,27 @@
-import { Animal } from "../../models/data";
+import {Animal} from "../../models/data";
+import './AnimalCard.scss'
 
 interface Props {
   animal: Animal;
   //  handleClick:
 }
 
-const AnimalCard = ({ animal }: Props) => {
+const AnimalCard = ({animal}: Props) => {
   return (
     <section className="card">
-      <img src={animal.image} />
-      <h3>{animal.name}</h3>
-      <section className="">
-        <figure></figure>
-        <p>{animal.location}</p>
+      <img src={animal.image}/>
+      <section className="text-block">
+        <h2 className="name">{animal.name}</h2>
+        <section className="location">
+          <figure></figure>
+          <p>{animal.location}</p>
+        </section>
+        <p className="age"> {animal.age} år</p>
+        <p className="date">Letat efter ett hem sedan 2018-06-12</p>
+        <button className="read-more">Läs mer</button>
       </section>
-      <p>{animal.age}</p>
-      <p>Letat efter ett hem sedan 2018-06-12 </p>
-      <button className="return">Lämna intresseanmälan</button>
     </section>
-  );
-};
-// // onClick={(handleClick)=>}
-export default AnimalCard;
+  )
+}
+// // onClick={(handleClick)=>} {animal.dateAdded}
+export default AnimalCard

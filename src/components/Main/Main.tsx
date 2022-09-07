@@ -1,4 +1,4 @@
-import { Animal } from "../../models/data";
+import {Animal} from "../../models/data";
 import AnimalCard from "../AnimalCard/AnimalCard";
 import "./Main.scss";
 
@@ -7,19 +7,21 @@ interface Props {
   //    handleClick:
 }
 
-const Main = ({ animals }: Props) => {
+const Main = ({animals}: Props) => {
   return (
     <main>
       <section>
         <input type="text" />
         <select>{}</select>
       </section>
-      {animals.map((animal) => (
-        <AnimalCard animal={animal} />
-      ))}
+      <section className="animal-list">
+        {animals.map((animal) => (
+          <AnimalCard animal={animal} />
+        ))}
+      </section>
       <button>läs in fler</button>
     </main>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main
