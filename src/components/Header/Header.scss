@@ -5,9 +5,17 @@
   height: 6rem;
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: center;
   color: $grey-color;
   position: sticky;
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: $grey-color;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+  }
   figure {
     display: flex;
     align-items: center;

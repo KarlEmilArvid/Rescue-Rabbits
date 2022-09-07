@@ -10,10 +10,10 @@
   &:before {
     content: "";
     position: absolute;
-    background-color: #000;
+    background-color: $grey-color;
     top: 0;
     width: 100vw;
-    height: 2px;
+    height: 1px;
   }
   section {
     flex: 1;

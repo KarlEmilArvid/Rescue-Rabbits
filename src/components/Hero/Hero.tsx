@@ -3,13 +3,16 @@ import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <section>
+    <section className="hero">
       <h1>
-        Varje djur förtjänar ett <span>hem</span>
+        Varje djur förtjänar <br></br> ett <span>hem</span>
       </h1>
+      <div className="placeholder"></div>
+      <div className="placeholder"></div>
+      <div className="placeholder"></div>
+      {/* <AnimalCard />
       <AnimalCard />
-      <AnimalCard />
-      <AnimalCard />
+      <AnimalCard /> */}
       <article>
         <p></p>
       </article>
