@@ -1,4 +1,4 @@
-import AnimalCard from "../AnimalCard/AnimalCard";
+// import AnimalCard from "../AnimalCard/AnimalCard";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -7,9 +7,6 @@ const Hero = () => {
       <h1>
         Varje djur förtjänar <br></br> ett <span>hem</span>
       </h1>
-      <div className="placeholder"></div>
-      <div className="placeholder"></div>
-      <div className="placeholder"></div>
       {/* <AnimalCard />
       <AnimalCard />
       <AnimalCard /> */}

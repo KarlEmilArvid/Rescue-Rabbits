@@ -1,17 +1,24 @@
-const AnimalCard = () => {
+import { Animal } from "../../models/data";
+
+interface Props {
+  animal: Animal;
+  //  handleClick:
+}
+
+const AnimalCard = ({ animal }: Props) => {
   return (
-    <section className="card" key={0}>
-      {/* <img src={} alt="bild" />
-        <h3>Namn</h3>
-        <section className="">
-            <figure></figure>
-            <p>Ort</p>
-        </section>
-        <p>Ålder</p>
-        <p>Letat efter ett hem sedan 2018-06-12 </p>
-        <button className='return' onClick={()=>}>Återlämna</button> */}
+    <section className="card">
+      <img src={animal.image} />
+      <h3>{animal.name}</h3>
+      <section className="">
+        <figure></figure>
+        <p>{animal.location}</p>
+      </section>
+      <p>{animal.age}</p>
+      <p>Letat efter ett hem sedan 2018-06-12 </p>
+      <button className="return">Lämna intresseanmälan</button>
     </section>
   );
 };
-
+// // onClick={(handleClick)=>}
 export default AnimalCard;
