@@ -3,12 +3,18 @@ import './AnimalCard.scss'
 
 interface Props {
   animal: Animal;
-  //  handleClick:
+  setPickedAnimal: (pickedAnimal: Animal) => void;
+  pickedAnimal: Animal;
 }
 
-const AnimalCard = ({animal}: Props) => {
+const AnimalCard = ({animal, pickedAnimal, setPickedAnimal}: Props) => {
+  function handleClick() {
+//    setCss(!hiddenClass)?
+    setPickedAnimal(animal);
+  }
+
   return (
-    <section className="card">
+    <section onClick={handleClick} className="card">
       <img src={animal.image}/>
       <section className="text-block">
         <h2 className="name">{animal.name}</h2>
@@ -23,5 +29,5 @@ const AnimalCard = ({animal}: Props) => {
     </section>
   )
 }
-// // onClick={(handleClick)=>} {animal.dateAdded}
+// {animal.dateAdded}
 export default AnimalCard

@@ -6,10 +6,11 @@ import "./Main.scss";
 
 interface Props {
   animals: Animal[];
-  //    handleClick:
+  setPickedAnimal: (pickedAnimal: Animal) => void;
+  pickedAnimal: Animal;
 }
 
-const Main = ({ animals }: Props) => {
+const Main = ({ animals, setPickedAnimal, pickedAnimal}: Props) => {
   const [types, settypes] = useState<Animal[]>(() => {
     const key = "type";
     const uniqueType = [
@@ -33,12 +34,12 @@ const Main = ({ animals }: Props) => {
       </section>
       <section className="animal-list">
         {animals.map((animal) => (
-          <AnimalCard animal={animal} />
+          <AnimalCard animal={animal} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} key={animal.id} />
         ))}
       </section>
       <button>läs in fler</button>
     </main>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main

@@ -4,11 +4,12 @@ import "./Hero.scss";
 
 interface Props {
   animals: Animal[];
-  //    handleClick:
+  setPickedAnimal: (pickedAnimal: Animal) => void;
+  pickedAnimal: Animal;
 }
 
-const Hero = ({ animals }: Props) => {
-  let firstThreeInAnimals = animals.slice(0, 3);
+const Hero = ({ animals, pickedAnimal, setPickedAnimal }: Props) => {
+//  let firstThreeInAnimals = animals.slice(0, 3);
   return (
     <section className="hero">
       <h1>
@@ -33,9 +34,7 @@ const Hero = ({ animals }: Props) => {
           </span>
         </div>
       </h1>
-      {firstThreeInAnimals.map((animal) => (
-        <AnimalCard animal={animal} />
-      ))}
+
       <article>
         <p></p>
       </article>
@@ -47,3 +46,8 @@ const Hero = ({ animals }: Props) => {
 };
 
 export default Hero;
+
+
+//      {firstThreeInAnimals.map((animals, pickedAnimal, setPickedAnimal) => (
+//  <AnimalCard animal={animals} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal}/>
+//  ))}
