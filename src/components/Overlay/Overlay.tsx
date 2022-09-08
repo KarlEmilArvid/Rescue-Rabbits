@@ -18,22 +18,25 @@ interface Props {
 const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Props) => {
   const [step, setStep] = useState<number>(1)
 
-  function handleClickToForm () {
-    setStep(2)
+  function handleClick () {
+    if (step === 3) {
+      hideOverlay()
+      setStep(1)
+    } else {
+      setStep(step+1)
+      console.log(step)
+    }
   }
-  function handleClickToConfirmed () {
-    setStep(3)
-  }
+
   
-   
   if (step === 2) {
     return (
-      <section className={visibility}>
+      <section className={visibility} >
       <section className="overlay__container">
         <header className="overlay__header">
           <Breadcrumbs step={step}/> 
           <figure>
-            <img src={close} alt="close button" />
+            <img src={close} alt="close button" onClick={()=> {hideOverlay()}} />
           </figure>
         </header>
         <main className="overlay__main overlay__main--column">
@@ -41,7 +44,7 @@ const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Prop
               <img className="animalInfo__img" src={pickedAnimal.image} alt="" />
               <h2 className="animalInfo__name">{pickedAnimal.name}</h2>
             </div>
-          <Form handleClickToConfirmed={handleClickToConfirmed} />
+          <Form handleClick={handleClick} />
         </main>
         
         <footer className="overlay__footer">
@@ -57,7 +60,7 @@ const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Prop
         <header className="overlay__header">
           <Breadcrumbs step={step}/> 
           <figure>
-            <img src={close} alt="close button" />
+            <img src={close} alt="close button"  onClick={()=> {hideOverlay()}} />
           </figure>
         </header>
         <main className="overlay__main overlay__main--column">
@@ -73,18 +76,18 @@ const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Prop
         
         <footer className="overlay__footer overlay__footer--center">
           
-          <button onClick={()=> {hideOverlay()}} className="button button--center button--overlay">Toppen!</button>
+          <button onClick={()=> {handleClick()}} className="button button--center button--overlay">Toppen!</button>
         </footer>
       </section>
     </section>
     )
   } else {
     return (
-      <section className={visibility}>
+      <section className={visibility} >
       <section className="overlay__container">
         <header className="overlay__header">
           <Breadcrumbs step={step}/> 
-          <figure>
+          <figure onClick={()=> {hideOverlay()}}>
             <img src={close} alt="close button" />
           </figure>
         </header>
@@ -94,7 +97,7 @@ const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Prop
         </main>
         <footer className="overlay__footer">
           <p className="interestedCount">X personer är intresserade av {pickedAnimal.name}</p>
-          <button onClick={()=> {handleClickToForm()}} className="button button--overlay">Intresseanmälan</button>
+          <button onClick={()=> {handleClick()}} className="button button--overlay">Intresseanmälan</button>
         </footer>
       </section>
     </section>

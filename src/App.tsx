@@ -12,7 +12,7 @@ function App() {
   const [animals, setAnimals] = useState<Animal[]>(jsonData.animals);
   const [pickedAnimal, setPickedAnimal] = useState<Animal>(jsonData.animals[1]);
   const [visibility, setVisibility] = useState<string>('overlay hideOverlay')
-
+  
   function hideOverlay() {
     setVisibility('overlay hideOverlay')
   }

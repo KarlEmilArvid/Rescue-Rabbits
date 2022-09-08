@@ -13,9 +13,9 @@ interface FormState{
 }
 
 interface Props {
-    handleClickToConfirmed: any;
+    handleClick: any;
 }
-const Form = ({ handleClickToConfirmed}: Props) => {
+const Form = ({ handleClick}: Props) => {
    
     // EY! Byt ut typen här.. det där ser gräsligt ut!
     const [formData, setFormData] = useState<FormState>({
@@ -33,7 +33,8 @@ const Form = ({ handleClickToConfirmed}: Props) => {
       const handleSubmit = (event:any) => {
         event.preventDefault();
         console.log(formData)
-        handleClickToConfirmed();
+        handleClick();
+        //SPara till localstore och nollställ
       }
 
     return (
