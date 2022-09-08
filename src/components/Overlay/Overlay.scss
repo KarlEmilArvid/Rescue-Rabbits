@@ -13,7 +13,6 @@
     z-index: 2; 
     cursor: pointer;
     place-content: center;
-
     .overlay__container {
         background-color: $white-color;
         width: 60vw;
@@ -33,15 +32,12 @@
             display: flex;
             justify-content: center;
             padding: 0;
-            
             .animalInfo__img {
                 height: fit-content;
                 max-width: 150px;
             }
-            
         }
     }
-    
 }
 .animalInfo {
     color: $grey-color;
@@ -60,11 +56,9 @@
             width: 25px;
             height: 25px;
             .animalInfo__locationPin {
-                
                 height: 100%;
                 width: 100%;
             }
         }
     }
-    
 }

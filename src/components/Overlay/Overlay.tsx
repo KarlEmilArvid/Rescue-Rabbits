@@ -1,5 +1,5 @@
 import "./Overlay.scss";
-import Breadcrumbs from "../Breadcrums/Breadcrumbs"
+import Breadcrumbs from "../Breadcrumbs/Breadcrumbs"
 import close from "../../assets/close.svg"
 import locationPin from "../../assets/locationPin.svg"
 import { Animal } from "../../models/data";
