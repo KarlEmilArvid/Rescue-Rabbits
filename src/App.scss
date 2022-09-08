@@ -32,11 +32,15 @@ a {
 
 .button {
   background-color: $blue-color;
-  font-size: 1.5rem;
   padding: 0.7rem;
   font-weight: 300;
   color: $white-color;
   line-height: 29px;
   border: 1px solid $blue-color;
   border-radius: 5px;
+}
+
+.button--overlay{
+  font-size: 1.5rem;
+  width: fit-content;
 }
