@@ -1,0 +1,13 @@
+@import "../../App.scss";
+
+.animalInfo {
+    color: $grey-color;
+    font-size: 1.3rem;
+    max-width: 40%;
+    padding-left: 1rem;
+}
+.animalInfo__name {
+    color: $grey-color;
+    font-size: 2.625rem;
+    text-decoration: underline 2px $blue-color;
+}

@@ -3,6 +3,7 @@
 $grey-color: #50585b;
 $white-color: #f0f0f0;
 $blue-color: #5e9fff;
+$green-color: #7EB780;
 
 $fs-header: 28px;
 $fs-s-header: 20px;
@@ -43,4 +44,10 @@ a {
 .button--overlay{
   font-size: 1.5rem;
   width: fit-content;
+}
+
+.button--green {
+  background-color: $green-color;
+  border: 1px solid $green-color;
+  align-self: center;
 }
