@@ -25,12 +25,12 @@ const Form = ({ handleClickToConfirmed}: Props) => {
         message: "",
     })
 
-    const handleChange = (event) => {
+    const handleChange = (event:any) => {
         setFormData({ ...formData, [event.target.name]: event.target.value });
         console.log(formData)
       };
     
-      const handleSubmit = (event) => {
+      const handleSubmit = (event:any) => {
         event.preventDefault();
         console.log(formData)
         handleClickToConfirmed();

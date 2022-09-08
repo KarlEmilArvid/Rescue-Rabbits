@@ -1,6 +1,5 @@
 import {Animal} from "../../models/data";
 import './AnimalCard.scss'
-var cardElem = document.getElementsByClassName("card");
 interface Props {
   animal: Animal;
   setPickedAnimal: (pickedAnimal: Animal) => void;
@@ -11,7 +10,6 @@ interface Props {
 
 const AnimalCard = ({showOverlay, animal, pickedAnimal, setPickedAnimal}: Props) => {
   function handleClick() {
-//    setCss(!hiddenClass)?
     showOverlay();
     setPickedAnimal(animal);
   }
