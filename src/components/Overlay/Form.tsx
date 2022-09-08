@@ -1,15 +1,38 @@
 import "./Form.scss";
-import {Animal} from "../../models/data";
+import profile from "../../assets/profile.svg"
+import phone from "../../assets/phone.svg"
+import mail from "../../assets/mail.svg"
+import message from "../../assets/message.svg"
 
-interface Props {
-    animalName: string;
-  }
-
-
-const Form = ({ animalName }: Props) => {
+const Form = () => {
     return (
         <section className="form">
-            <h2 className="animalInfo__name">{animalName}</h2>
+            <form>
+                <div>
+                    <figure>
+                        <img src={profile} alt="" />
+                    </figure>
+                    <input type="text" placeholder="För- och Efternamn" />
+                </div>
+                <div>
+                    <figure>
+                        <img src={phone} alt="" />
+                    </figure> 
+                    <input type="tel" placeholder="Telefonnummer"/>
+                </div>
+                <div>
+                    <figure>
+                        <img src={mail} alt="" />
+                    </figure>
+                    <input type="email" placeholder="E-mail"/>
+                </div>
+                <div className="input__message">
+                    <figure>
+                        <img src={message} alt="" />
+                    </figure>
+                    <input  type="text" placeholder="Meddelande (frivilligt)"/>
+                </div>                
+            </form>
         </section>
     );
 };

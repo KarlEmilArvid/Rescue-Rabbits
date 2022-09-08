@@ -5,12 +5,8 @@
     color: $grey-color;
     font-size: 1.3rem;
     max-width: 50%;
-    padding-left: 1rem;
-    .animalInfo__name {
-        color: $grey-color;
-        font-size: 2.625rem;
-        text-decoration: underline 2px $blue-color;
-    }
+    padding: 0;
+    
     .animalInfo__location {
         display: flex;
         padding: 1rem 0 3rem 0;
