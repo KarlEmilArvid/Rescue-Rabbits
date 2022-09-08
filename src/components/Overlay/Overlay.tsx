@@ -1,29 +1,25 @@
 import "./Overlay.scss"
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs"
 import Form from "./Form"
-import Confirmed from "./Confirmed"
 import close from "../../assets/close.svg"
 import { Animal } from "../../models/data"
 import ReadMore from "./ReadMore"
 import { useState } from "react"
+import confetti from "../../assets/confetti.gif"
 
 interface Props {
-  animals: Animal[];
   setPickedAnimal: (pickedAnimal: Animal) => void;
   pickedAnimal: Animal;
 
 }  
 
-const Overlay = ({ animals, setPickedAnimal, pickedAnimal}: Props) => {
-  // const [showForm, setShowForm] = useState<boolean>(false)
+const Overlay = ({ setPickedAnimal, pickedAnimal}: Props) => {
   const [step, setStep] = useState<number>(1)
 
-  function handleClickToForm (animalId:number) {
-    // setShowForm(true)
+  function handleClickToForm () {
     setStep(2)
   }
-  function handleClickToConfirmed (animalId:number) {
-    // setShowForm(true)
+  function handleClickToConfirmed () {
     setStep(3)
   }
    
@@ -46,7 +42,7 @@ const Overlay = ({ animals, setPickedAnimal, pickedAnimal}: Props) => {
         </main>
         
         <footer className="overlay__footer">
-          <button onClick={()=> {handleClickToConfirmed(pickedAnimal.id)}} className="button button--overlay button--green">Skicka</button>
+          <button onClick={()=> {handleClickToConfirmed()}} className="button button--overlay button--center button--green">Skicka</button>
         </footer>
       </section>
     </section>
@@ -66,12 +62,16 @@ const Overlay = ({ animals, setPickedAnimal, pickedAnimal}: Props) => {
               <img className="animalInfo__img" src={pickedAnimal.image} alt="" />
               <h2 className="animalInfo__name">{pickedAnimal.name}</h2>
             </div>
-          <Confirmed />
+          <figure className="confirmedGif">
+            <img src={confetti} alt="confetti" />
+          </figure>
+          <p>Tack för visat intresse. Vi hör av oss så fort vi kan.</p>
         </main>
         
-        {/* <footer className="overlay__footer">
-          <button onClick={()=> {handleClickToConfirmed(pickedAnimal.id)}} className="button button--overlay button--green">Skicka</button>
-        </footer> */}
+        <footer className="overlay__footer overlay__footer--center">
+          
+          <button onClick={()=> {handleClickToConfirmed()}} className="button button--center button--overlay">Toppen!</button>
+        </footer>
       </section>
     </section>
     )
@@ -91,7 +91,7 @@ const Overlay = ({ animals, setPickedAnimal, pickedAnimal}: Props) => {
         </main>
         <footer className="overlay__footer">
           <p className="interestedCount">X personer är intresserade av {pickedAnimal.name}</p>
-          <button onClick={()=> {handleClickToForm(pickedAnimal.id)}} className="button button--overlay">Intresseanmälan</button>
+          <button onClick={()=> {handleClickToForm()}} className="button button--overlay">Intresseanmälan</button>
         </footer>
       </section>
     </section>

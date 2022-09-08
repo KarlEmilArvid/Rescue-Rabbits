@@ -49,6 +49,7 @@
             .animalInfo__img {
                 height: fit-content;
                 max-width: 150px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 // padding-right: 1rem;
             }
         }
@@ -61,10 +62,14 @@
             width: 100%;
             flex-direction: column;
             align-items: flex-end;
-            padding: 3rem;
+            padding: 1rem;
             .interestedCount{
                 margin-bottom: 1rem;
             }
         }
+       
     }
+}
+.confirmedGif img{
+    width: 250px;
 }
