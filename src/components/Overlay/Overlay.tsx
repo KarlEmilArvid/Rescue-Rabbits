@@ -3,7 +3,7 @@ import Breadcrumbs from "../Breadcrumbs/Breadcrumbs"
 import close from "../../assets/close.svg"
 
 import { Animal } from "../../models/data";
-import AnimalInfo from "./AnimalInfo";
+import ReadMore from "./ReadMore";
 
 interface Props {
   animals: Animal[];
@@ -23,13 +23,13 @@ const Overlay = ({ animals }: Props) => {
           </figure>
         </header>
         <main className="overlay__main">
-          <img className="animalInfo__img" src={theAnimal.image} alt="" />
-          <AnimalInfo theAnimal={theAnimal}/>
+          <figure>
+            <img className="animalInfo__img" src={theAnimal.image} alt="" />
+          </figure>
+          <ReadMore theAnimal={theAnimal}/>
+          {/* <AnimalInfo theAnimal={theAnimal}/> */}
         </main>
-        <footer className="overlay__footer">
-          <p className="interestedCount">X personer är intresserade av {theAnimal.name}</p>
-          <button className="button button--overlay">Intresseanmälan</button>
-        </footer>
+        
       </section>
     </section>
   );
