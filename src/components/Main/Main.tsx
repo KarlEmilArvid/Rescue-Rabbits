@@ -8,9 +8,11 @@ interface Props {
   animals: Animal[];
   setPickedAnimal: (pickedAnimal: Animal) => void;
   pickedAnimal: Animal;
+  //BYT TYP!!!
+  showOverlay: any;
 }
 
-const Main = ({ animals, setPickedAnimal, pickedAnimal}: Props) => {
+const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal}: Props) => {
   const [types, settypes] = useState<Animal[]>(() => {
     const key = "type";
     const uniqueType = [
@@ -34,7 +36,7 @@ const Main = ({ animals, setPickedAnimal, pickedAnimal}: Props) => {
       </section>
       <section className="animal-list">
         {animals.map((animal) => (
-          <AnimalCard animal={animal} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} key={animal.id} />
+          <AnimalCard showOverlay={showOverlay} animal={animal} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} key={animal.id} />
         ))}
       </section>
       <button>läs in fler</button>

@@ -1,15 +1,18 @@
 import {Animal} from "../../models/data";
 import './AnimalCard.scss'
-
+var cardElem = document.getElementsByClassName("card");
 interface Props {
   animal: Animal;
   setPickedAnimal: (pickedAnimal: Animal) => void;
   pickedAnimal: Animal;
+  //BYT TYP
+  showOverlay: any;
 }
 
-const AnimalCard = ({animal, pickedAnimal, setPickedAnimal}: Props) => {
+const AnimalCard = ({showOverlay, animal, pickedAnimal, setPickedAnimal}: Props) => {
   function handleClick() {
 //    setCss(!hiddenClass)?
+    showOverlay();
     setPickedAnimal(animal);
   }
 

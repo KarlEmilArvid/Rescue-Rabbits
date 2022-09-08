@@ -10,10 +10,12 @@ import confetti from "../../assets/confetti.gif"
 interface Props {
   setPickedAnimal: (pickedAnimal: Animal) => void;
   pickedAnimal: Animal;
-
+  visibility: string;
+  // ÄNDRA TYP!!!!
+  hideOverlay: any;
 }  
 
-const Overlay = ({ setPickedAnimal, pickedAnimal}: Props) => {
+const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Props) => {
   const [step, setStep] = useState<number>(1)
 
   function handleClickToForm () {
@@ -22,10 +24,11 @@ const Overlay = ({ setPickedAnimal, pickedAnimal}: Props) => {
   function handleClickToConfirmed () {
     setStep(3)
   }
+  
    
   if (step === 2) {
     return (
-      <section className="overlay">
+      <section className={visibility}>
       <section className="overlay__container">
         <header className="overlay__header">
           <Breadcrumbs step={step}/> 
@@ -38,18 +41,18 @@ const Overlay = ({ setPickedAnimal, pickedAnimal}: Props) => {
               <img className="animalInfo__img" src={pickedAnimal.image} alt="" />
               <h2 className="animalInfo__name">{pickedAnimal.name}</h2>
             </div>
-          <Form />
+          <Form handleClickToConfirmed={handleClickToConfirmed} />
         </main>
         
         <footer className="overlay__footer">
-          <button onClick={()=> {handleClickToConfirmed()}} className="button button--overlay button--center button--green">Skicka</button>
+          
         </footer>
       </section>
     </section>
     )
   } else if (step === 3) {
     return (
-      <section className="overlay">
+      <section className={visibility}>
       <section className="overlay__container">
         <header className="overlay__header">
           <Breadcrumbs step={step}/> 
@@ -70,14 +73,14 @@ const Overlay = ({ setPickedAnimal, pickedAnimal}: Props) => {
         
         <footer className="overlay__footer overlay__footer--center">
           
-          <button onClick={()=> {handleClickToConfirmed()}} className="button button--center button--overlay">Toppen!</button>
+          <button onClick={()=> {hideOverlay()}} className="button button--center button--overlay">Toppen!</button>
         </footer>
       </section>
     </section>
     )
   } else {
     return (
-      <section className="overlay">
+      <section className={visibility}>
       <section className="overlay__container">
         <header className="overlay__header">
           <Breadcrumbs step={step}/> 

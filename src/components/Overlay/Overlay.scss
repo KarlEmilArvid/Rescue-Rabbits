@@ -1,9 +1,14 @@
 @import "../../App.scss";
 
-
+.showOverlay {
+    display: grid; /* none by default. toggla med display: grid */
+}
+.hideOverlay{
+    display: none;
+}
 .overlay {
     position: fixed; 
-    display: grid; /* none by default. toggla med display: grid */
+    // display: none; /* none by default. toggla med display: grid */
     width: 100%;
     height: 100%;
     top: 0;
@@ -14,6 +19,7 @@
     z-index: 2;
     cursor: pointer;
     place-content: center;
+    
     .overlay__container {
         display: flex;
         flex-direction: column;
@@ -23,6 +29,7 @@
         min-height: 60vh;
         cursor: default;
         padding: 2rem;
+        box-shadow: -10px 10px 14px rgba(0, 0, 0, 0.25);
         .overlay__header {
             display: flex;
             justify-content: center;
