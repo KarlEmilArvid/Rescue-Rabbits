@@ -28,7 +28,6 @@ const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Prop
     }
   }
 
-  
   if (step === 2) {
     return (
       <section className={visibility} >
@@ -46,9 +45,7 @@ const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Prop
             </div>
           <Form handleClick={handleClick} />
         </main>
-        
         <footer className="overlay__footer">
-          
         </footer>
       </section>
     </section>
@@ -60,7 +57,7 @@ const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Prop
         <header className="overlay__header">
           <Breadcrumbs step={step}/> 
           <figure>
-            <img src={close} alt="close button"  onClick={()=> {hideOverlay()}} />
+            <img src={close} alt="close button" onClick={()=> {hideOverlay()}} />
           </figure>
         </header>
         <main className="overlay__main overlay__main--column">
@@ -73,10 +70,8 @@ const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Prop
           </figure>
           <p>Tack för visat intresse. Vi hör av oss så fort vi kan.</p>
         </main>
-        
         <footer className="overlay__footer overlay__footer--center">
-          
-          <button onClick={()=> {handleClick()}} className="button button--center button--overlay">Toppen!</button>
+          <button onClick={()=> {handleClick()}} className="button-center">Toppen!</button>
         </footer>
       </section>
     </section>
@@ -97,13 +92,12 @@ const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Prop
         </main>
         <footer className="overlay__footer">
           <p className="interestedCount">X personer är intresserade av {pickedAnimal.name}</p>
-          <button onClick={()=> {handleClick()}} className="button button--overlay">Intresseanmälan</button>
+          <button onClick={()=> {handleClick()}} className="button-overlay">Intresseanmälan</button>
         </footer>
       </section>
     </section>
     )
   }
-  
 }
 
 export default Overlay

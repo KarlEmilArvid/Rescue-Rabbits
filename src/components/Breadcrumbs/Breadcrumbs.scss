@@ -7,18 +7,20 @@
   // margin-left: auto;
   padding-bottom: 2rem;
 }
+
 .breadcrumbs>span{
-  display:inline-block;
-  width:33px;
-  height:33px;
-  background:#C0CCD7;
-  border-radius:100%;
-  border:1px solid #C0CCD7;
-  border-top:1px solid #9DA7AF;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  background: #C0CCD7;
+  border-radius: 100%;
+  border: 1px solid #C0CCD7;
+  border-top: 1px solid #9DA7AF;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .breadcrumbs>span.active{
   color: $white-color;
   background: $blue-color;

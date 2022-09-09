@@ -10,13 +10,10 @@
 
 .animal-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
-.main {
-  margin-top: 4rem;
-}
+
 .search-field {
   display: flex;
   gap: 2rem;

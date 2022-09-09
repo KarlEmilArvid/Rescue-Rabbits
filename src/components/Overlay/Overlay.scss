@@ -19,7 +19,7 @@
     z-index: 2;
     cursor: pointer;
     place-content: center;
-    
+
     .overlay__container {
         display: flex;
         flex-direction: column;
@@ -75,9 +75,9 @@
                 margin-bottom: 1rem;
             }
         }
-       
     }
 }
+
 .confirmedGif img{
     width: 250px;
 }

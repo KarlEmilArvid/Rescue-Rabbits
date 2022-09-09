@@ -1,10 +1,10 @@
-import "./Form.scss";
+import "./Form.scss"
 import profile from "../../assets/profile.svg"
 import phone from "../../assets/phone.svg"
 import mail from "../../assets/mail.svg"
 import message from "../../assets/message.svg"
-import { useState } from "react";
- 
+import { useState } from "react"
+
 interface FormState{
     name: string;
     phoneNumber: string;
@@ -15,8 +15,9 @@ interface FormState{
 interface Props {
     handleClick: any;
 }
+
 const Form = ({ handleClick}: Props) => {
-   
+
     // EY! Byt ut typen här.. det där ser gräsligt ut!
     const [formData, setFormData] = useState<FormState>({
         name: "",
@@ -28,14 +29,14 @@ const Form = ({ handleClick}: Props) => {
     const handleChange = (event:any) => {
         setFormData({ ...formData, [event.target.name]: event.target.value });
         console.log(formData)
-      };
-    
-      const handleSubmit = (event:any) => {
+    }
+
+    const handleSubmit = (event:any) => {
         event.preventDefault();
         console.log(formData)
         handleClick();
         //SPara till localstore och nollställ
-      }
+    }
 
     return (
         <section className="form">
@@ -64,10 +65,11 @@ const Form = ({ handleClick}: Props) => {
                     </figure>
                     <input onChange={handleChange}  value={formData.message} type="text" name="message" placeholder="Meddelande (frivilligt)"/>
                 </div>  
-                <button onClick={()=> {handleSubmit}} className="button button--overlay button--center button--green">Skicka</button>
-                {/* <button type="submit" onSubmit={handleSubmit}>Submit</button>               */}
+                <button onClick={()=> {handleSubmit}} className="button-green">Skicka</button>
+                {/* <button type="submit" onSubmit={handleSubmit}>Submit</button>*/}
             </form>
         </section>
-    );
-};
-export default Form;
+    )
+}
+
+export default Form

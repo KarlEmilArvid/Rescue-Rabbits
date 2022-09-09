@@ -10,11 +10,28 @@ $fs-s-header: 20px;
 $fs-text: 16px;
 $fs-small: 10px;
 
+@mixin button-color {
+  background-color: $blue-color;
+  color: $white-color;
+  border: 1px solid $blue-color;
+}
+
+@mixin button {
+  @include button-color;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 29px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   font-family: "Inter", sans-serif;
 }
+
 body {
   background-color: $white-color;
 }
@@ -31,26 +48,18 @@ a {
   color: $grey-color;
 }
 
-.button {
-  background-color: $blue-color;
-  padding: 0.7rem;
-  font-weight: 300;
-  color: $white-color;
-  line-height: 29px;
-  border: 1px solid $blue-color;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button--overlay{
-  font-size: 1.5rem;
+.button-overlay{
+  @include button;
   width: fit-content;
 }
 
-.button--green {
+.button-green {
+  @include button;
   background-color: $green-color;
   border: 1px solid $green-color;
 }
-.button--center{
+
+.button-center{
+  @include button;
   align-self: center;
 }
