@@ -13,6 +13,12 @@ interface Props {
 }
 
 const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal}: Props) => {
+  const cardsShown = 6; //visar 6 kort, 6 mer vid varje knapptryck, när alla kort är visade så försvinner knappen
+  const [load, setLoad] = useState (cardsShown)
+  const loadMoreCards = () => {
+    setLoad (load + cardsShown);
+  }
+
   const [types, settypes] = useState<Animal[]>(() => {
     const key = "type";
     const uniqueType = [
@@ -20,6 +26,7 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal}: Props) => 
     ];
     return uniqueType;
   });
+
   return (
     <main className="main">
       <section className="search-field">
@@ -35,11 +42,13 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal}: Props) => 
         </select>
       </section>
       <section className="animal-list">
-        {animals.map((animal) => (
+        {animals?.slice(0, load)?.map((animal) => (
           <AnimalCard showOverlay={showOverlay} animal={animal} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} key={animal.id} />
         ))}
       </section>
-      <button>läs in fler</button>
+      <div className="button-wrapper">
+        {load <animals?.length && (<button onClick={loadMoreCards}>läs in fler</button>)}
+      </div>
     </main>
   )
 }
