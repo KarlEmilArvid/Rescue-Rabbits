@@ -1,12 +1,11 @@
 @import "../../App.scss";
 
-
 .animalInfo {
     color: $grey-color;
     font-size: 1.3rem;
     max-width: 50%;
     padding: 0;
-    
+
     .animalInfo__location {
         display: flex;
         padding: 1rem 0 3rem 0;

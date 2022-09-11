@@ -1,8 +1,8 @@
-import facebook from "../../assets/facebook.svg";
-import insta from "../../assets/insta.svg";
-import linkedin from "../../assets/linkedin.svg";
-import twitter from "../../assets/twitter.svg";
-import "./Footer.scss";
+import facebook from "../../assets/facebook.svg"
+import insta from "../../assets/insta.svg"
+import linkedin from "../../assets/linkedin.svg"
+import twitter from "../../assets/twitter.svg"
+import "./Footer.scss"
 
 const Footer = () => {
   return (
@@ -38,7 +38,7 @@ const Footer = () => {
         <p>Om oss</p>
       </section>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

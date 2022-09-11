@@ -3,7 +3,7 @@ import Breadcrumbs from "../Breadcrumbs/Breadcrumbs"
 import Form from "./Form"
 import close from "../../assets/close.svg"
 import { Animal } from "../../models/data"
-import ReadMore from "./ReadMore"
+import AnimalDescription from "./AnimalDescription"
 import { useState } from "react"
 import confetti from "../../assets/confetti.gif"
 
@@ -94,7 +94,7 @@ const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Prop
         </header>
         <main className="overlay__main">
           <img className="animalInfo__img" src={pickedAnimal.image} alt=""/>
-          <ReadMore pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal}/>
+          <AnimalDescription pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal}/>
         </main>
         <footer className="overlay__footer">
           <p className="interestedCount">X personer är intresserade av {pickedAnimal.name}</p>

@@ -1,5 +1,5 @@
-import "./ReadMore.scss";
-import {Animal} from "../../models/data";
+import "./AnimalDescription.scss"
+import {Animal} from "../../models/data"
 import locationPin from "../../assets/locationPin.svg"
 
 interface Props {
@@ -7,14 +7,14 @@ interface Props {
     pickedAnimal: Animal;
 }
 
-const ReadMore = ({pickedAnimal}: Props) => {
+const AnimalDescription = ({pickedAnimal}: Props) => {
     return (
         <section className="animalInfo">
             <h2 className="animalInfo__name">{pickedAnimal.name}</h2>
             <p className="animalInfo__age">{pickedAnimal.age} år</p>
             <div className="animalInfo__location">
                 <figure className="animalInfo__locationPin">
-                    <img className="animalInfo__locationPin" src={locationPin} alt="location pin" />
+                    <img className="animalInfo__locationPin" src={locationPin} alt="location pin"/>
                 </figure>
                 <p className="animalInfo__place">{pickedAnimal.location}</p>
             </div>
@@ -23,4 +23,4 @@ const ReadMore = ({pickedAnimal}: Props) => {
     )
 }
 
-export default ReadMore
+export default AnimalDescription
