@@ -6,6 +6,7 @@
 .hideOverlay{
     display: none;
 }
+
 .overlay {
     position: fixed; 
     // display: none; /* none by default. toggla med display: grid */
@@ -19,7 +20,6 @@
     z-index: 2;
     cursor: pointer;
     place-content: center;
-
     .overlay__container {
         display: flex;
         flex-direction: column;

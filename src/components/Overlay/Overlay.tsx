@@ -23,27 +23,33 @@ const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Prop
       hideOverlay()
       setStep(1)
     } else {
-      setStep(step+1)
-      console.log(step)
+      setStep(step + 1)
+    }
+  }
+  //om step är mindre än 4 när man stänger ner så återställs stegen
+  function handleClose () {
+    if (step < 4) {
+      setStep(1)
+      hideOverlay()
     }
   }
 
   if (step === 2) {
     return (
-      <section className={visibility} >
+      <section className={visibility}>
       <section className="overlay__container">
         <header className="overlay__header">
           <Breadcrumbs step={step}/> 
           <figure>
-            <img src={close} alt="close button" onClick={()=> {hideOverlay()}} />
+            <img src={close} alt="close button" onClick={()=> {handleClose()}}/>
           </figure>
         </header>
         <main className="overlay__main overlay__main--column">
             <div>
-              <img className="animalInfo__img" src={pickedAnimal.image} alt="" />
+              <img className="animalInfo__img" src={pickedAnimal.image} alt=""/>
               <h2 className="animalInfo__name">{pickedAnimal.name}</h2>
             </div>
-          <Form handleClick={handleClick} />
+          <Form handleClick={handleClick}/>
         </main>
         <footer className="overlay__footer">
         </footer>
@@ -57,16 +63,16 @@ const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Prop
         <header className="overlay__header">
           <Breadcrumbs step={step}/> 
           <figure>
-            <img src={close} alt="close button" onClick={()=> {hideOverlay()}} />
+            <img src={close} alt="close button" onClick={()=> {handleClose()}}/>
           </figure>
         </header>
         <main className="overlay__main overlay__main--column">
             <div>
-              <img className="animalInfo__img" src={pickedAnimal.image} alt="" />
+              <img className="animalInfo__img" src={pickedAnimal.image} alt=""/>
               <h2 className="animalInfo__name">{pickedAnimal.name}</h2>
             </div>
           <figure className="confirmedGif">
-            <img src={confetti} alt="confetti" />
+            <img src={confetti} alt="confetti"/>
           </figure>
           <p>Tack för visat intresse. Vi hör av oss så fort vi kan.</p>
         </main>
@@ -78,16 +84,16 @@ const Overlay = ({ visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Prop
     )
   } else {
     return (
-      <section className={visibility} >
+      <section className={visibility}>
       <section className="overlay__container">
         <header className="overlay__header">
           <Breadcrumbs step={step}/> 
-          <figure onClick={()=> {hideOverlay()}}>
-            <img src={close} alt="close button" />
+          <figure onClick={()=> {handleClose()}}>
+            <img src={close} alt="close button"/>
           </figure>
         </header>
         <main className="overlay__main">
-          <img className="animalInfo__img" src={pickedAnimal.image} alt="" />
+          <img className="animalInfo__img" src={pickedAnimal.image} alt=""/>
           <ReadMore pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal}/>
         </main>
         <footer className="overlay__footer">
