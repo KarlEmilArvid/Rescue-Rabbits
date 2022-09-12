@@ -19,7 +19,14 @@ const AnimalCard = ({showOverlay, animal, pickedAnimal, setPickedAnimal}: Props)
 
   return (
     <section onClick={handleClick} className='card'>
-      <img className='animal-image' src={animal.image}/>
+     
+      <img className='animal-image' src={animal.image} />
+      {animal.adopted ? (
+        <div>
+          <div className='glass-blur'></div>
+          <p className='adopted-info'>Adopterad</p>
+        </div>) : 
+        (<></>)}
       <section className='text-block'>
         <h2 className='name'>{animal.name}</h2>
         <section className="location">
@@ -28,7 +35,7 @@ const AnimalCard = ({showOverlay, animal, pickedAnimal, setPickedAnimal}: Props)
           </p>
         </section>
         <p className='age'> {animal.age} år</p>
-        <p className='date'>Letat efter ett hem sedan 2018-06-12</p>
+        <p className='date'>{animal.dateAdded}</p>
         <button className='card-button'>Läs mer<img src={arrow}/></button>
       </section>
     </section>

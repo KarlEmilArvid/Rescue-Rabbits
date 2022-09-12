@@ -5,6 +5,7 @@ export interface Animal {
   location: string;
   desc: string;
   adopted: boolean;
+  dateAdded:string;
   image: string;
   id: number;
 }

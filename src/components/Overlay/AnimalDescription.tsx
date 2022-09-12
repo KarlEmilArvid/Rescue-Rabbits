@@ -10,7 +10,10 @@ interface Props {
 const AnimalDescription = ({pickedAnimal}: Props) => {
     return (
         <section className="animalInfo">
-            <h2 className="animalInfo__name">{pickedAnimal.name}</h2>
+            <div>
+                <h2 className="animalInfo__name">{pickedAnimal.name}</h2>
+                {pickedAnimal.adopted ? (<p>Adopterad</p>) : (<></>)}
+            </div>
             <p className="animalInfo__age">{pickedAnimal.age} år</p>
             <div className="animalInfo__location">
                 <figure className="animalInfo__locationPin">
