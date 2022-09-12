@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
 
 $grey-color: #50585b;
 $white-color: #f0f0f0;
 $blue-color: #5e9fff;
-$green-color: #7EB780;
+$green-color: #7eb780;
 $error-color: #dc3545;
 $success-color: #28a745;
 
@@ -36,11 +36,12 @@ $fs-small: 10px;
 
 body {
   background-color: $white-color;
+  overflow-x: hidden;
 }
 
 .App {
   margin: 0 auto;
-  width: 1200px;
+  width: 1000px;
   max-width: 90%;
   position: relative;
 }
@@ -50,7 +51,7 @@ a {
   color: $grey-color;
 }
 
-.button-overlay{
+.button-overlay {
   @include button;
   width: fit-content;
 }
@@ -63,5 +64,6 @@ a {
 }
 
 .button-center {
+  @include button;
   align-self: center;
 }

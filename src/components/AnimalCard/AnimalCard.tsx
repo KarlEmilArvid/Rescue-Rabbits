@@ -1,6 +1,7 @@
 import {Animal} from '../../models/data'
 import './AnimalCard.scss'
 import map from '../../assets/MapPin.svg'
+import arrow from '../../assets/Arrow.svg'
 
 interface Props {
   animal: Animal;
@@ -28,7 +29,7 @@ const AnimalCard = ({showOverlay, animal, pickedAnimal, setPickedAnimal}: Props)
         </section>
         <p className='age'> {animal.age} år</p>
         <p className='date'>Letat efter ett hem sedan 2018-06-12</p>
-        <button className='card-button'>Läs mer</button>
+        <button className='card-button'>Läs mer<img src={arrow}/></button>
       </section>
     </section>
   )

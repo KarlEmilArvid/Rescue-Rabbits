@@ -47,7 +47,7 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal}: Props) => 
         ))}
       </section>
       <div className="button-wrapper">
-        {load <animals?.length && (<button onClick={loadMoreCards}>läs in fler</button>)}
+        {load <animals?.length && (<button onClick={loadMoreCards}>Läs in fler</button>)}
       </div>
     </main>
   )

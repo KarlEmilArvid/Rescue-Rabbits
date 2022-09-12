@@ -13,7 +13,7 @@
     position: absolute;
     background-color: $grey-color;
     top: 0;
-    width: 100%; //ändrat från vw till % för att få bort horizontell scroll
+    width: 100vw; //ändrat från vw till % för att få bort horizontell scroll
     height: 1px;
   }
   section {
