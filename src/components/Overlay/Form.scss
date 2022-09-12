@@ -6,6 +6,7 @@
     max-width: 40%;
     padding-left: 1rem;
 }
+
 .animalInfo__name {
     color: $grey-color;
     font-size: 2.625rem;
@@ -13,17 +14,14 @@
     text-underline-offset: 4px;
 }
 
-
 .form {
     padding: 1rem;
-    // width:100%;
     form {
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
     input {
-        // min-width:100%;
         border: none;
         border-bottom: 1px #BFBFBF solid;
         background-color: $white-color;
@@ -32,9 +30,9 @@
         font-weight: 300;
         font-size: 1.5rem;
         padding-bottom: 0.5rem;
-        
     }
     .input__message {
         margin-top: 2rem;       
     }
+    
 }
