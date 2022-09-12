@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header setStep={setStep}/>
+      <Header/>
       <Hero animals={animals} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} />
       <Main showOverlay={showOverlay} animals={animals} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} />
       <Overlay step= {step} setStep={setStep} visibility={visibility} hideOverlay={hideOverlay} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} />
