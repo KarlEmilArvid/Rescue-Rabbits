@@ -2,9 +2,12 @@ import "./Overlay.scss"
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs"
 import Form from "./Form"
 import close from "../../assets/close.svg"
+
 import { Animal } from "../../models/data"
 import AnimalDescription from "./AnimalDescription"
 import confetti from "../../assets/confetti.gif"
+import { useState } from "react";
+
 
 interface Props {
   setPickedAnimal: (pickedAnimal: Animal) => void;
@@ -12,13 +15,11 @@ interface Props {
   visibility: string;
   // ÄNDRA TYPER!!!!
   hideOverlay: any;
-  step: number
-  setStep:any;
+  setStep: any;
+  step: number;
 }  
 
-const Overlay = ({ step, setStep, visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Props) => {
-
-
+const Overlay = ({step, setStep, visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Props) => {
   function handleClick () {
     if (step === 3) {
       hideOverlay()
@@ -35,7 +36,8 @@ const Overlay = ({ step, setStep, visibility, hideOverlay, setPickedAnimal, pick
     }
   }
 
-  if (step === 2) {
+ if (step === 2) {
+    //Formiläret   <--Skrivet av Linus
     return (
       <section className={visibility}>
         <section className="overlay__container">
@@ -52,11 +54,11 @@ const Overlay = ({ step, setStep, visibility, hideOverlay, setPickedAnimal, pick
               </div>
             <Form handleClick={handleClick}/>
           </main>
-          
         </section>
       </section>
     )
   } else if (step === 3) {
+    //Bekräftat
     return (
       <section className={visibility}>
       <section className="overlay__container">
@@ -80,6 +82,7 @@ const Overlay = ({ step, setStep, visibility, hideOverlay, setPickedAnimal, pick
     )
   } else {
     return (
+      //läs mer om djuret
       <section className={visibility}>
       <section className="overlay__container">
         <header className="overlay__header">

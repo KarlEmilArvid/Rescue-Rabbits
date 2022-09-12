@@ -59,9 +59,7 @@
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 // padding-right: 1rem;
             }
-            p {
-                margin-bottom: 2rem;
-            }
+         
         }
         .overlay__main--column{
             flex-direction: column;
@@ -79,7 +77,12 @@
         }
     }
 }
-
+.animalInfo__name {
+    color: $grey-color;
+    font-size: 2.625rem;
+    text-decoration: underline 2px rgba(94, 159, 255, 0.6);
+    text-underline-offset: 4px;
+}
 .confirmedGif img{
     width: 250px;
 }

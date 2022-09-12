@@ -56,4 +56,30 @@
     margin-bottom: 1.7rem;
     font-size: $fs-s-header;
   }
+  .overlay {
+    display: grid;
+  }
+  .contactContent{
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: 1rem;
+      margin: 0.5rem;
+    }
+    p:first-of-type{
+      font-weight: 700;
+    }
+    p:last-of-type{
+      margin-top: 1.5rem;
+    }
+    .adress {
+      text-align: center;
+    }
+    .social-media{
+      div{
+        padding-top: 1rem;
+      }
+    }
+  }
 }
