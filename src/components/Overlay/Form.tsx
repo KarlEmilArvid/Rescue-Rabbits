@@ -19,7 +19,6 @@ interface Props {
 
 
 const Form = ({ handleClick}: Props) => {
-
     // EY! Byt ut typen här.. det där ser gräsligt ut!
     const [formData, setFormData] = useState<FormState>({
         name: "",
@@ -27,20 +26,17 @@ const Form = ({ handleClick}: Props) => {
         email: "",
         message: ""
     })
-
-
     const handleSubmit = (event:any) => {
-        event.preventDefault();
+        // event.preventDefault();
         console.log(formData)
         handleClick();
+        console.log("hej")
         //SPara till localstore och nollställ 
     }
-    
-    
     const handleChange = (event) => {
         event.preventDefault();
         setFormData({ ...formData, [event.target.name]: event.target.value });
-      
+        console.log(formData)
     }
 
     return (
@@ -73,10 +69,12 @@ const Form = ({ handleClick}: Props) => {
                     </figure>
                     <input onChange={handleChange}  value={formData.message} id="message" type="text" name="message" placeholder="Meddelande (frivilligt)"/>
                 </div>  
-                <div className="form-field">
-                <button onClick={()=> {handleSubmit}} className="button-green">Skicka</button>
-                </div>
+                <footer className="form__footer">                
+                    <button onClick={()=> {handleSubmit}} className="button-overlay button-center button-green">Skicka</button>
+                </footer>
+            
             </form>
+            
         </section>
     )
 }
