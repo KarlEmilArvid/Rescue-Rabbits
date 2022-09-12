@@ -5,7 +5,6 @@ import mail from "../../assets/mail.svg"
 import message from "../../assets/message.svg"
 import { useState } from "react"
 
-
 interface FormState{
     name: string;
     phoneNumber: string;
@@ -17,7 +16,6 @@ interface Props {
     handleClick: any;
 }
 
-
 const Form = ({ handleClick}: Props) => {
     // EY! Byt ut typen här.. det där ser gräsligt ut!
     const [formData, setFormData] = useState<FormState>({
@@ -26,14 +24,16 @@ const Form = ({ handleClick}: Props) => {
         email: "",
         message: ""
     })
-    const handleSubmit = (event:any) => {
+
+    const handleSubmit = (event: any) => {
         // event.preventDefault();
         console.log(formData)
         handleClick();
         console.log("hej")
         //SPara till localstore och nollställ 
     }
-    const handleChange = (event) => {
+
+    const handleChange = (event: any) => {
         event.preventDefault();
         setFormData({ ...formData, [event.target.name]: event.target.value });
         console.log(formData)
@@ -70,11 +70,9 @@ const Form = ({ handleClick}: Props) => {
                     <input onChange={handleChange}  value={formData.message} id="message" type="text" name="message" placeholder="Meddelande (frivilligt)"/>
                 </div>  
                 <footer className="form__footer">                
-                    <button onClick={()=> {handleSubmit}} className="button-overlay button-center button-green">Skicka</button>
+                    <button onClick={()=> {handleSubmit}} className="button-green">Skicka</button>
                 </footer>
-            
             </form>
-            
         </section>
     )
 }

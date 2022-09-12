@@ -2,12 +2,10 @@ import "./Overlay.scss"
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs"
 import Form from "./Form"
 import close from "../../assets/close.svg"
-
 import { Animal } from "../../models/data"
 import AnimalDescription from "./AnimalDescription"
 import confetti from "../../assets/confetti.gif"
 import { useState } from "react";
-
 
 interface Props {
   setPickedAnimal: (pickedAnimal: Animal) => void;
@@ -17,7 +15,7 @@ interface Props {
   hideOverlay: any;
   setStep: any;
   step: number;
-}  
+}
 
 const Overlay = ({step, setStep, visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Props) => {
   function handleClick () {

@@ -7,8 +7,6 @@
     padding-left: 1rem;
 }
 
-
-
 .form {
     display: flex;
     flex-direction: column;
@@ -34,10 +32,13 @@
     .input__message {
         margin-top: 2rem;       
     }
-    
+    button {
+        width: 20rem;
+    }
 }
 
 .form__footer {
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
 }
