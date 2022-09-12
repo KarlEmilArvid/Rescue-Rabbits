@@ -81,7 +81,6 @@ const Overlay = ({step, setStep, visibility, hideOverlay, setPickedAnimal, picke
   } else {
     return (
       //läs mer om djuret
-      <section className={visibility}>
             <section className={visibility}>
             <section className="overlay__container">
               <header className="overlay__header">
@@ -99,10 +98,8 @@ const Overlay = ({step, setStep, visibility, hideOverlay, setPickedAnimal, picke
                 <p className="interestedCount">X personer är intresserade av {pickedAnimal.name}</p>
                 <button onClick={()=> {handleClick()}} className="button-overlay">Intresseanmälan</button>
               </footer>}
-              
             </section>
           </section>
-      </section>
 
 
     //   <section className={visibility}>
