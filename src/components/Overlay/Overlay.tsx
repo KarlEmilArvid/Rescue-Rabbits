@@ -17,8 +17,8 @@ interface Props {
   step: number;
 }
 
-const Overlay = ({step, setStep, visibility, hideOverlay, setPickedAnimal, pickedAnimal}: Props) => {
-  function handleClick () {
+const Overlay = ({ step, setStep, visibility, hideOverlay, setPickedAnimal, pickedAnimal }: Props) => {
+  function handleClick() {
     if (step === 3) {
       hideOverlay()
       setStep(1)
@@ -27,30 +27,30 @@ const Overlay = ({step, setStep, visibility, hideOverlay, setPickedAnimal, picke
     }
   }
   //om step är mindre än 4 när man stänger ner så återställs stegen
-  function handleClose () {
+  function handleClose() {
     if (step < 4) {
       setStep(1)
       hideOverlay()
     }
   }
 
- if (step === 2) {
+  if (step === 2) {
     //Formiläret   <--Skrivet av Linus
     return (
       <section className={visibility}>
         <section className="overlay__container">
           <header className="overlay__header">
-            <Breadcrumbs step={step}/> 
+            <Breadcrumbs step={step} />
             <figure>
-              <img src={close} alt="close button" onClick={()=> {handleClose()}}/>
+              <img src={close} alt="close button" onClick={() => { handleClose() }} />
             </figure>
           </header>
           <main className="overlay__main overlay__main--column">
-              <div>
-                <img className="animalInfo__img" src={pickedAnimal.image} alt=""/>
-                <h2 className="animalInfo__name">{pickedAnimal.name}</h2>
-              </div>
-            <Form handleClick={handleClick}/>
+            <div>
+              <img className="animalInfo__img" src={pickedAnimal.image} alt="" />
+              <h2 className="animalInfo__name">{pickedAnimal.name}</h2>
+            </div>
+            <Form handleClick={handleClick} />
           </main>
         </section>
       </section>
@@ -59,67 +59,66 @@ const Overlay = ({step, setStep, visibility, hideOverlay, setPickedAnimal, picke
     //Bekräftat
     return (
       <section className={visibility}>
-      <section className="overlay__container">
-        <header className="overlay__header">
-          <Breadcrumbs step={step}/> 
-          <figure>
-            <img src={close} alt="close button" onClick={()=> {handleClose()}}/>
-          </figure>
-        </header>
-        <main className="overlay__main overlay__main--column">
-          <figure className="confirmedGif">
-            <img src={confetti} alt="confetti"/>
-          </figure>
-          <p>Tack för visat intresse. Vi hör av oss så fort vi kan.</p>
-        </main>
-        <footer className="overlay__footer overlay__footer--center">
-          <button onClick={()=> {handleClick()}} className="button-overlay button-center">Toppen!</button>
-        </footer>
+        <section className="overlay__container">
+          <header className="overlay__header">
+            <Breadcrumbs step={step} />
+            <figure>
+              <img src={close} alt="close button" onClick={() => { handleClose() }} />
+            </figure>
+          </header>
+          <main className="overlay__main overlay__main--column">
+            <figure className="confirmedGif">
+              <img src={confetti} alt="confetti" />
+            </figure>
+            <p>Tack för visat intresse. Vi hör av oss så fort vi kan.</p>
+          </main>
+          <footer className="overlay__footer overlay__footer--center">
+            <button onClick={() => { handleClick() }} className="button-overlay button-center">Toppen!</button>
+          </footer>
+        </section>
       </section>
-    </section>
     )
   } else {
     return (
       //läs mer om djuret
-            <section className={visibility}>
-            <section className="overlay__container">
-              <header className="overlay__header">
-                <Breadcrumbs step={step}/> 
-                <figure onClick={()=> {handleClose()}}>
-                  <img src={close} alt="close button"/>
-                </figure>
-              </header>
-              <main className="overlay__main">
-                <img className="animalInfo__img" src={pickedAnimal.image} alt=""/>
-                <AnimalDescription pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal}/>
-              </main>
-              { pickedAnimal.adopted ? (<></>) : 
-              <footer className="overlay__footer">
-                <p className="interestedCount">X personer är intresserade av {pickedAnimal.name}</p>
-                <button onClick={()=> {handleClick()}} className="button-overlay">Intresseanmälan</button>
-              </footer>}
-            </section>
-          </section>
+      <section className={visibility}>
+        <section className="overlay__container">
+          <header className="overlay__header">
+            <Breadcrumbs step={step} />
+            <figure onClick={() => { handleClose() }}>
+              <img src={close} alt="close button" />
+            </figure>
+          </header>
+          <main className="overlay__main">
+            <img className="animalInfo__img" src={pickedAnimal.image} alt="" />
+            <AnimalDescription pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} />
+          </main>
+          {pickedAnimal.adopted ? (<></>) :
+            <footer className="overlay__footer">
+              <p className="interestedCount">X personer är intresserade av {pickedAnimal.name}</p>
+              <button onClick={() => { handleClick() }} className="button-overlay">Intresseanmälan</button>
+            </footer>}
+        </section>
+      </section>
 
-
-    //   <section className={visibility}>
-    //   <section className="overlay__container">
-    //     <header className="overlay__header">
-    //       <Breadcrumbs step={step}/> 
-    //       <figure onClick={()=> {handleClose()}}>
-    //         <img src={close} alt="close button"/>
-    //       </figure>
-    //     </header>
-    //     <main className="overlay__main">
-    //       <img className="animalInfo__img" src={pickedAnimal.image} alt=""/>
-    //       <AnimalDescription pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal}/>
-    //     </main>
-    //     <footer className="overlay__footer">
-    //       <p className="interestedCount">X personer är intresserade av {pickedAnimal.name}</p>
-    //       <button onClick={()=> {handleClick()}} className="button-overlay">Intresseanmälan</button>
-    //     </footer>
-    //   </section>
-    // </section>
+      //   <section className={visibility}>
+      //   <section className="overlay__container">
+      //     <header className="overlay__header">
+      //       <Breadcrumbs step={step}/> 
+      //       <figure onClick={()=> {handleClose()}}>
+      //         <img src={close} alt="close button"/>
+      //       </figure>
+      //     </header>
+      //     <main className="overlay__main">
+      //       <img className="animalInfo__img" src={pickedAnimal.image} alt=""/>
+      //       <AnimalDescription pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal}/>
+      //     </main>
+      //     <footer className="overlay__footer">
+      //       <p className="interestedCount">X personer är intresserade av {pickedAnimal.name}</p>
+      //       <button onClick={()=> {handleClick()}} className="button-overlay">Intresseanmälan</button>
+      //     </footer>
+      //   </section>
+      // </section>
     )
   }
 }
