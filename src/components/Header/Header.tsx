@@ -16,25 +16,25 @@ const Header = () => {
     <header className="header">
       <div className="header-content">
         <figure>
-          <img src={Logo} alt=""/>
+          <img src={Logo} alt="" />
         </figure>
         <h1>Rescue Rabbits</h1>
-        <a onClick={()=>setToggleContact(!toggleContact)}> Kontakta oss</a>
+        <a onClick={() => setToggleContact(!toggleContact)}> Kontakta oss</a>
         {toggleContact ? (<></>) : (
           <section className="overlay">
             <section className="overlay__container">
               <header className="overlay__header">
                 <figure>
-                  <img src={close} alt="close button" onClick={()=> {setToggleContact(!toggleContact)}}/>
+                  <img src={close} alt="close button" onClick={() => { setToggleContact(!toggleContact) }} />
                 </figure>
               </header>
               <main className="overlay__main overlay__main--column">
-                  <figure>
-                    <img src={Logo} alt="logo" />
-                  </figure>
-                  <h2 className='animalInfo__name'>Kontakta oss</h2>
-                  <div className="contactContent">
-                    <section className="adress">
+                <figure>
+                  <img src={Logo} alt="logo" />
+                </figure>
+                <h2 className='animalInfo__name'>Kontakta oss</h2>
+                <div className="contactContent">
+                  <section className="adress">
                     <p>Rescue Rabbits</p>
                     <p>Sheltergatan 3</p>
                     <p>204 24 Åkersberga</p>
@@ -57,7 +57,7 @@ const Header = () => {
                       </a>
                     </div>
                   </section>
-                  </div>
+                </div>
               </main>
             </section>
           </section>

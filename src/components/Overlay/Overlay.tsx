@@ -100,27 +100,27 @@ const Overlay = ({ step, setStep, visibility, hideOverlay, setPickedAnimal, pick
             </footer>}
         </section>
       </section>
-
-      //   <section className={visibility}>
-      //   <section className="overlay__container">
-      //     <header className="overlay__header">
-      //       <Breadcrumbs step={step}/> 
-      //       <figure onClick={()=> {handleClose()}}>
-      //         <img src={close} alt="close button"/>
-      //       </figure>
-      //     </header>
-      //     <main className="overlay__main">
-      //       <img className="animalInfo__img" src={pickedAnimal.image} alt=""/>
-      //       <AnimalDescription pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal}/>
-      //     </main>
-      //     <footer className="overlay__footer">
-      //       <p className="interestedCount">X personer är intresserade av {pickedAnimal.name}</p>
-      //       <button onClick={()=> {handleClick()}} className="button-overlay">Intresseanmälan</button>
-      //     </footer>
-      //   </section>
-      // </section>
     )
   }
 }
 
 export default Overlay
+
+//   <section className={visibility}>
+//   <section className="overlay__container">
+//     <header className="overlay__header">
+//       <Breadcrumbs step={step}/>
+//       <figure onClick={()=> {handleClose()}}>
+//         <img src={close} alt="close button"/>
+//       </figure>
+//     </header>
+//     <main className="overlay__main">
+//       <img className="animalInfo__img" src={pickedAnimal.image} alt=""/>
+//       <AnimalDescription pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal}/>
+//     </main>
+//     <footer className="overlay__footer">
+//       <p className="interestedCount">X personer är intresserade av {pickedAnimal.name}</p>
+//       <button onClick={()=> {handleClick()}} className="button-overlay">Intresseanmälan</button>
+//     </footer>
+//   </section>
+// </section>
