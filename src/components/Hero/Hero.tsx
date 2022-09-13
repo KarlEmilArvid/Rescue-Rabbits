@@ -8,10 +8,10 @@ interface Props {
   setPickedAnimal: (pickedAnimal: Animal) => void;
   pickedAnimal: Animal;
 }
-//Hero är temporärt fixat, tror ej vi kommer kunna visa kort i vilket fall när vi har sök funktionen, söker vi på fågel så kommer alla katter i heron att försvinna tex
-//Blir nog lättast att ha tre statiska djur kort, bättre att lägga fokus på sök funktion och responsiv styling
+
 const Hero = ({ animals, pickedAnimal, setPickedAnimal }: Props) => {
-  //  let firstThreeInAnimals = animals.slice(0, 3);
+  usestate;
+  let firstThreeInAnimals = animals.slice(0, 3);
   return (
     <section className="hero">
       <h1>
@@ -36,80 +36,44 @@ const Hero = ({ animals, pickedAnimal, setPickedAnimal }: Props) => {
           </span>
         </div>
       </h1>
-      <section className="card">
-        <img
-          className="animal-image"
-          src="https://images.unsplash.com/photo-1569591159212-b02ea8a9f239?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+      {firstThreeInAnimals.map((animals, pickedAnimal, setPickedAnimal) => (
+        <AnimalCard
+          animal={animals}
+          pickedAnimal={pickedAnimal}
+          setPickedAnimal={setPickedAnimal}
         />
-        <section className="text-block">
-          <h2 className="name">Kent</h2>
-          <section className="location">
-            <p>
-              <img className="map-pin" src={map} alt="map pin" />
-              Eskilstuna
-            </p>
-          </section>
-          <p className="age"> 32 år</p>
-          <p className="date">Letat efter ett hem sedan 2010-12-24</p>
-          <button className="card-button">Läs mer</button>
-        </section>
-      </section>
-      <section className="card">
-        <img
-          className="animal-image"
-          src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-        />
-        <section className="text-block">
-          <h2 className="name">Pär</h2>
-          <section className="location">
-            <p>
-              <img className="map-pin" src={map} alt="map pin" />
-              Umeå
-            </p>
-          </section>
-          <p className="age"> 4 år</p>
-          <p className="date">Letat efter ett hem sedan 2018-06-12</p>
-          <button className="card-button">Läs mer</button>
-        </section>
-      </section>
-      <section className="card">
-        <img
-          className="animal-image"
-          src="https://images.unsplash.com/photo-1618252903592-2b8c90c43a6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Z3VpbmVhJTIwcGlnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-        />
-        <section className="text-block">
-          <h2 className="name">Åke</h2>
-          <section className="location">
-            <p>
-              <img className="map-pin" src={map} alt="map pin" />
-              Karlskoga
-            </p>
-          </section>
-          <p className="age"> 13 år</p>
-          <p className="date">Letat efter ett hem sedan 2020-01-22</p>
-          <button className="card-button">Läs mer</button>
-        </section>
-      </section>
-      <article>
+      ))}
+      <article className="hero-desc">
         <p>
           Rescue Rabbit är en plats där djur kan omplaceras. Vi tror på starkt
           på förtroende mellan parter, därför låter vi alltid den nuvarande
           ägaren bestämma själv till vilken av de intresserade parter hen vill
-          adoptera bort djuret till. Vi kämpar för att varje djur ska ha en
-          trygg och hälsosam framtid. Det gör vi genom att skicka ut våra
-          vetrinärer och göra en hälsokontroll på djuret innan det kommer upp på
-          hemsidan. Scrolla ned för att se alla djur
+          adoptera bort djuret till.
         </p>
+        <p>
+          Vi kämpar för att varje djur ska ha en trygg och hälsosam framtid. Det
+          gör vi genom att skicka ut våra vetrinärer och göra en hälsokontroll
+          på djuret innan det kommer upp på hemsidan.
+        </p>
+        <br />
+        <div className="scroll-down">
+          <p>Scrolla ned för att se alla djur </p>
+          <figure>
+            <svg
+              viewBox="0 0 24 129"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.9393 128.061C11.5251 128.646 12.4749 128.646 13.0607 128.061L22.6066 118.515C23.1924 117.929 23.1924 116.979 22.6066 116.393C22.0208 115.808 21.0711 115.808 20.4853 116.393L12 124.879L3.51471 116.393C2.92893 115.808 1.97918 115.808 1.39339 116.393C0.807607 116.979 0.807607 117.929 1.39339 118.515L10.9393 128.061ZM10.5 -6.55671e-08L10.5 127L13.5 127L13.5 6.55671e-08L10.5 -6.55671e-08Z"
+                fill="#B4AAAA"
+              />
+            </svg>
+          </figure>
+        </div>
       </article>
-      <figure>
-        <img src="" alt="" />
-      </figure>
     </section>
   );
 };
 
 export default Hero;
-
-//      {firstThreeInAnimals.map((animals, pickedAnimal, setPickedAnimal) => (
-//  <AnimalCard animal={animals} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal}/>
-//  ))}
