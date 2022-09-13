@@ -5,7 +5,13 @@
     font-size: 1.3rem;
     max-width: 50%;
     padding: 0;
-
+    div:first-of-type{
+        display: flex;
+        align-items: center;
+        p{
+            color: $blue-color;
+        }
+    }
     .animalInfo__location {
         display: flex;
         padding: 1rem 0 3rem 0;

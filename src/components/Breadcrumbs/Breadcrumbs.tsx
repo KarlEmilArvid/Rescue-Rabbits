@@ -4,30 +4,30 @@ interface Props {
   step: number;
 }
 
-const Breadcrumbs = ({step}: Props) => {
+const Breadcrumbs = ({ step }: Props) => {
   if (step === 1) {
     return (
-      <span className="breadcrumbs">  
+      <span className="breadcrumbs">
         <span className="active">1</span>
         <span>2</span>
         <span>3</span>
-      </span>  
+      </span>
     )
-  } else if (step === 2 ) {
+  } else if (step === 2) {
     return (
-      <span className="breadcrumbs">  
+      <span className="breadcrumbs">
         <span>1</span>
         <span className="active">2</span>
         <span>3</span>
-      </span> 
+      </span>
     )
   } else {
     return (
-      <span className="breadcrumbs">  
+      <span className="breadcrumbs">
         <span>1</span>
         <span>2</span>
         <span className="active">3</span>
-      </span> 
+      </span>
     )
   }
 }

@@ -29,7 +29,7 @@ const Hero = ({ animals, pickedAnimal, setPickedAnimal }: Props) => {
               <path
                 d="M1.21077 15.99C24.8022 8.41801 143.752 1.60663 143.752 1.60663C117.426 6.08828 63.6136 16.9149 58.9694 24.3682"
                 stroke="#5E9FFF"
-                stroke-width="2"
+                strokeWidth="2"
               />
             </svg>
           </span>

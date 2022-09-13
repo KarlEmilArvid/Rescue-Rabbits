@@ -72,7 +72,7 @@
       "age": 4,
       "location": "Göteborg",
       "desc": "Walk bird harness wet nose meow harness grooming water dog lol catz water bedding toys bird seed fetch lazy cat. Parakeet scratcher brush biscuit lick dog tooth walk food lazy cat biscuit. Cockatiel Snowball kitten Rover ferret puppy",
-      "adopted": false,
+      "adopted": true,
       "dateAdded": "2022-08-11",
       "image": "https://images.unsplash.com/photo-1599744975877-53aaa14cf55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGh1bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "id": 7
@@ -156,7 +156,7 @@
     },
     {
       "name": "Gunnar",
-      "type": "Marsvin",
+      "type": "Katt",
       "age": 8,
       "location": "Göteborg",
       "desc": "Dinnertime fetch throw feathers fleas tongue lazy cat lick throw kitten parrot hamster wag tail aquarium chew heel good boy lick feathers cockatiel. Wet Nose food ferret vaccine finch vaccination Scooby snacks string wagging barky tail head good boy pet gate meow good boy.",

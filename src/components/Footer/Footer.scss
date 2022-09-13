@@ -2,7 +2,7 @@
 
 .footer {
   line-height: 30px;
-  padding-top: 1rem;
+  padding: 2rem 0;
   color: $grey-color;
   width: 100%;
   display: flex;
@@ -13,7 +13,7 @@
     position: absolute;
     background-color: $grey-color;
     top: 0;
-    width: 100vw; //ändrat från vw till % för att få bort horizontell scroll
+    width: 100vw;
     height: 1px;
   }
   section {
