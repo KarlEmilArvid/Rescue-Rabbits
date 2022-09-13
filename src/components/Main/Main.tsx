@@ -13,7 +13,7 @@ interface Props {
 }
 
 const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) => {
-  const [query, setQuery] = useState("")
+  const [query, setQuery] = useState<string>("")
   const cardsShown = 6; //visar 6 kort, 6 mer vid varje knapptryck, när alla kort är visade så försvinner knappen
   const [load, setLoad] = useState(cardsShown)
   const loadMoreCards = () => {
