@@ -12,8 +12,6 @@ interface Props {
   pickedAnimal: Animal;
   visibility: string;
   hideOverlay: () => void;
-  setStep: (num:number) => void;
-  step: number;
 }
 
 
@@ -23,6 +21,7 @@ const Overlay = ({
   setPickedAnimal,
   pickedAnimal,
   }: Props) => {
+    
   const [step, setStep] = useState<number>(1);
 
 

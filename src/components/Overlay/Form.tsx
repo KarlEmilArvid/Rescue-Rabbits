@@ -3,7 +3,7 @@ import profile from "../../assets/profile.svg"
 import phone from "../../assets/phone.svg"
 import mail from "../../assets/mail.svg"
 import message from "../../assets/message.svg"
-import { useState } from "react"
+import React, { useState } from "react"
 
 interface FormState {
     name: string;
@@ -31,7 +31,7 @@ const Form = ({ handleClick }: Props) => {
         //SPara till localstore och nollställ 
     }
 
-    const handleChange = (event: any) => {
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         event.preventDefault();
         setFormData({ ...formData, [event.target.name]: event.target.value });
         console.log(formData)
