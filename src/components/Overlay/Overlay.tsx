@@ -14,18 +14,17 @@ interface Props {
   hideOverlay: () => void;
 }
 
-
 const Overlay = ({
   visibility,
   hideOverlay,
   setPickedAnimal,
   pickedAnimal,
   }: Props) => {
-    
+ 
   const [step, setStep] = useState<number>(1);
 
 
-  function handleClick() {
+  function handleClick(): void {
     if (step === 3) {
       hideOverlay();
       setStep(1);
@@ -34,7 +33,7 @@ const Overlay = ({
     }
   }
   //om step är mindre än 4 när man stänger ner så återställs stegen
-  function handleClose() {
+  function handleClose(): void {
     if (step < 4) {
       setStep(1);
       hideOverlay();
@@ -63,7 +62,7 @@ const Overlay = ({
       </section>
     )
   } else if (step === 3) {
-    //Bekräftat
+    //Bekräftat overlay
     return (
       <section className={visibility}>
         <section className="overlay__container">
@@ -87,7 +86,7 @@ const Overlay = ({
     )
   } else {
     return (
-      //läs mer om djuret
+      //läs mer om djuret overlay
       <section className={visibility}>
         <section className="overlay__container">
           <header className="overlay__header">

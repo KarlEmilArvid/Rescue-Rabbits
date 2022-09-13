@@ -13,3 +13,10 @@ export interface Animal {
 export interface TypeArray {
   type: string;
 }
+
+export interface FormState {
+  name: string;
+  phoneNumber: string;
+  email: string;
+  message: string;
+}

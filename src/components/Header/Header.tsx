@@ -8,9 +8,8 @@ import insta from "../../assets/insta.svg"
 import linkedin from "../../assets/linkedin.svg"
 import twitter from "../../assets/twitter.svg"
 
-
 const Header = () => {
-  const [toggleContact, setToggleContact] = useState(true)
+  const [toggleContact, setToggleContact] = useState<boolean>(true)
 
   return (
     <header className="header">

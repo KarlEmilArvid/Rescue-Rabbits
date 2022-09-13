@@ -4,13 +4,7 @@ import phone from "../../assets/phone.svg"
 import mail from "../../assets/mail.svg"
 import message from "../../assets/message.svg"
 import React, { useState } from "react"
-
-interface FormState {
-    name: string;
-    phoneNumber: string;
-    email: string;
-    message: string;
-}
+import { FormState } from "../../models/data";
 
 interface Props {
     handleClick: () => void;
@@ -24,11 +18,10 @@ const Form = ({ handleClick }: Props) => {
         message: ""
     })
 
-    const handleSubmit = (event:any) => { //måste ha typ any för att required ska fungera
+    const handleSubmit = (event: any) => { //måste ha typ any för att required ska fungera
         event.preventDefault()
         console.log("test")
         handleClick();
-        //SPara till localstore och nollställ 
     }
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

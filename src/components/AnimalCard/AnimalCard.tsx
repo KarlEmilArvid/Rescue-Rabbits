@@ -16,7 +16,7 @@ const AnimalCard = ({
   pickedAnimal,
   setPickedAnimal,
 }: Props) => {
-  function handleClick() {
+  function handleClick(): void {
     showOverlay();
     setPickedAnimal(animal);
   }
