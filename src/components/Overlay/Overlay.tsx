@@ -1,9 +1,11 @@
 import { useState } from "react";
 import close from "../../assets/close.svg";
 import confetti from "../../assets/confetti.gif";
+import locationPin from "../../assets/locationPin.svg";
 import { Animal } from "../../models/data";
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 import AnimalDescription from "./AnimalDescription";
+import "./AnimalDescription.scss";
 import Form from "./Form";
 import "./Overlay.scss";
 
@@ -19,10 +21,8 @@ const Overlay = ({
   hideOverlay,
   setPickedAnimal,
   pickedAnimal,
-  }: Props) => {
- 
+}: Props) => {
   const [step, setStep] = useState<number>(1);
-
 
   function handleClick(): void {
     if (step === 3) {
@@ -48,19 +48,29 @@ const Overlay = ({
           <header className="overlay__header">
             <Breadcrumbs step={step} />
             <figure>
-              <img src={close} alt="close button" onClick={() => { handleClose() }} />
+              <img
+                src={close}
+                alt="close button"
+                onClick={() => {
+                  handleClose();
+                }}
+              />
             </figure>
           </header>
           <main className="overlay__main overlay__main--column">
             <div>
-              <img className="animalInfo__img" src={pickedAnimal.image} alt="" />
+              <img
+                className="animalInfo__img"
+                src={pickedAnimal.image}
+                alt=""
+              />
               <h2 className="animalInfo__name">{pickedAnimal.name}</h2>
             </div>
             <Form handleClick={handleClick} />
           </main>
         </section>
       </section>
-    )
+    );
   } else if (step === 3) {
     //Bekräftat overlay
     return (
@@ -69,7 +79,13 @@ const Overlay = ({
           <header className="overlay__header">
             <Breadcrumbs step={step} />
             <figure>
-              <img src={close} alt="close button" onClick={() => { handleClose() }} />
+              <img
+                src={close}
+                alt="close button"
+                onClick={() => {
+                  handleClose();
+                }}
+              />
             </figure>
           </header>
           <main className="overlay__main overlay__main--column">
@@ -79,11 +95,18 @@ const Overlay = ({
             <p>Tack för visat intresse. Vi hör av oss så fort vi kan.</p>
           </main>
           <footer className="overlay__footer overlay__footer--center">
-            <button onClick={() => { handleClick() }} className="button-overlay button-center">Toppen!</button>
+            <button
+              onClick={() => {
+                handleClick();
+              }}
+              className="button-overlay button-center"
+            >
+              Toppen!
+            </button>
           </footer>
         </section>
       </section>
-    )
+    );
   } else {
     return (
       //läs mer om djuret overlay
@@ -91,23 +114,63 @@ const Overlay = ({
         <section className="overlay__container">
           <header className="overlay__header">
             <Breadcrumbs step={step} />
-            <figure onClick={() => { handleClose() }}>
+            <figure
+              onClick={() => {
+                handleClose();
+              }}
+            >
               <img src={close} alt="close button" />
             </figure>
           </header>
           <main className="overlay__main">
-            <img className="animalInfo__img" src={pickedAnimal.image} alt="" />
-            <AnimalDescription pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} />
+            <section className="overlay__info">
+              <img
+                className="animalInfo__img"
+                src={pickedAnimal.image}
+                alt=""
+              />
+              <div>
+                <h2 className="animalInfo__name">{pickedAnimal.name}</h2>
+                {pickedAnimal.adopted ? <p>Adopterad</p> : <></>}
+              </div>
+              <p className="animalInfo__age">{pickedAnimal.age} år</p>
+              <div className="animalInfo__location">
+                <figure className="animalInfo__locationPin">
+                  <img
+                    className="animalInfo__locationPin"
+                    src={locationPin}
+                    alt="location pin"
+                  />
+                </figure>
+                <p className="animalInfo__place">{pickedAnimal.location}</p>
+              </div>
+            </section>
+            <AnimalDescription
+              pickedAnimal={pickedAnimal}
+              setPickedAnimal={setPickedAnimal}
+            />
           </main>
-          {pickedAnimal.adopted ? (<></>) :
+          {pickedAnimal.adopted ? (
+            <></>
+          ) : (
             <footer className="overlay__footer">
-              <p className="interestedCount">X personer är intresserade av {pickedAnimal.name}</p>
-              <button onClick={() => { handleClick() }} className="button-overlay">Intresseanmälan</button>
-            </footer>}
+              <p className="interestedCount">
+                X personer är intresserade av {pickedAnimal.name}
+              </p>
+              <button
+                onClick={() => {
+                  handleClick();
+                }}
+                className="button-overlay"
+              >
+                Intresseanmälan
+              </button>
+            </footer>
+          )}
         </section>
       </section>
-    )
+    );
   }
 };
 
-export default Overlay
+export default Overlay;
