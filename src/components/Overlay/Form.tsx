@@ -24,7 +24,7 @@ const Form = ({ handleClick }: Props) => {
         message: ""
     })
 
-    const handleSubmit = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const handleSubmit = (event:any) => { //måste ha typ any för att required ska fungera
         event.preventDefault()
         console.log("test")
         handleClick();
@@ -68,7 +68,8 @@ const Form = ({ handleClick }: Props) => {
                     <input onChange={handleChange} value={formData.message} id="message" type="text" name="message" placeholder="Meddelande (frivilligt)" />
                 </div>
                 <footer className="form__footer">
-                    <button onClick={handleSubmit} className="button-green">Skicka</button>
+                    <button onSubmit={handleSubmit} className="button-green"> Skicka
+                </button>
                 </footer>
             </form>
         </section>
