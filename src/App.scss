@@ -59,7 +59,7 @@ a {
   width: fit-content;
 }
 
-.button-green {
+#button-green {
   @include button;
   background-color: $green-color;
   border: 1px solid $green-color;
@@ -79,3 +79,4 @@ a {
     --fs-text: 14px;
   }
 }
+

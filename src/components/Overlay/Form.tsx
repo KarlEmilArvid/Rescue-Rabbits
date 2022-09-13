@@ -39,7 +39,7 @@ const Form = ({ handleClick }: Props) => {
 
     return (
         <section className="form">
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="form-field">
                     <figure>
                         <img src={profile} alt="" />
@@ -68,8 +68,7 @@ const Form = ({ handleClick }: Props) => {
                     <input onChange={handleChange} value={formData.message} id="message" type="text" name="message" placeholder="Meddelande (frivilligt)" />
                 </div>
                 <footer className="form__footer">
-                    <button onSubmit={handleSubmit} className="button-green"> Skicka
-                </button>
+                    <input type="submit" id="button-green" value="Skicka" /> 
                 </footer>
             </form>
         </section>
