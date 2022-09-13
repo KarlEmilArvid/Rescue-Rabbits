@@ -11,6 +11,7 @@ interface Props {
   //BYT TYP!!!
   showOverlay: any;
 }
+<<<<<<< Updated upstream
 
 const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) => {
   const [query, setQuery] = useState("")
@@ -19,6 +20,19 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) =>
   const loadMoreCards = () => {
     setLoad(load + cardsShown);
   }
+=======
+const Main = ({
+  showOverlay,
+  animals,
+  setPickedAnimal,
+  pickedAnimal,
+}: Props) => {
+  const cardsShown = 6; //visar 6 kort, 6 mer vid varje knapptryck, när alla kort är visade så försvinner knappen
+  const [load, setLoad] = useState(cardsShown);
+  const loadMoreCards = () => {
+    setLoad(load + cardsShown);
+  };
+>>>>>>> Stashed changes
 
   return (
     <main className="main">
@@ -33,6 +47,7 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) =>
         </section>
       </section>
       <section className="animal-list">
+<<<<<<< Updated upstream
         {animals?.filter((animal) =>
           animal.type.toLowerCase().includes(query) || animal.location.toLowerCase().includes(query)).slice(0, load)?.map((animal) => (
             <AnimalCard showOverlay={showOverlay} animal={animal} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} key={animal.id} />
@@ -40,9 +55,25 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) =>
       </section>
       <div className="button-wrapper">
         {load < animals?.length && (<button onClick={loadMoreCards}>Läs in fler</button>)}
+=======
+        {animals?.slice(0, load)?.map((animal) => (
+          <AnimalCard
+            showOverlay={showOverlay}
+            animal={animal}
+            pickedAnimal={pickedAnimal}
+            setPickedAnimal={setPickedAnimal}
+            key={animal.id}
+          />
+        ))}
+      </section>
+      <div className="button-wrapper">
+        {load < animals?.length && (
+          <button onClick={loadMoreCards}>Läs in fler</button>
+        )}
+>>>>>>> Stashed changes
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
