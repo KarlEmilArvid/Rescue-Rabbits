@@ -1,6 +1,7 @@
 @import "../../App.scss";
 
 .card {
+<<<<<<< Updated upstream
     position: relative;
     width: 18rem;
     height: 24rem;
@@ -31,78 +32,93 @@
             -webkit-backdrop-filter: blur(2px)
         }
     }
+=======
+  position: relative;
+  width: 18rem;
+  height: 24rem;
+  margin: 3rem 1rem;
+  box-shadow: 0px 2px 6px 0px #676767;
+  position: relative;
+  border-radius: 5% 5% 0 0;
+  :hover {
+    cursor: pointer;
+  }
+>>>>>>> Stashed changes
 }
 
 .text-block {
-    display: grid;
-    grid-template-areas: 
+  display: grid;
+  padding: 0.5rem;
+  grid-template-areas:
     "name . location"
     "age . ."
     "button . date";
-    position: absolute;
-    bottom: 0;
-    height: 7rem;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    border-radius: 5% 5% 0 0;
+  position: absolute;
+  bottom: 0;
+  height: 7rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 5% 5% 0 0;
 }
 
 .name {
-    font-size: 2rem;
-    grid-area: name;
-    margin: 0;
-    text-decoration: underline;
-    text-align: start;
+  font-size: var(--fs-a);
+  grid-area: name;
+  margin: 0;
+  text-decoration: underline;
+  text-align: start;
 }
 
 .location {
-    grid-area: location;
-    text-align: end;
-    margin: 0.8rem;
-    .map-pin {
-        width: 1.2rem;
-        height: 1.2rem;
-        margin-right: 0.3rem;
-    }
+  grid-area: location;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .map-pin {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
 }
 
 .age {
-    grid-area: age;
-    text-align: start;
-    font-size: 1rem;
-    line-height: 1rem;
-    margin-left: 0.6rem;
+  grid-area: age;
+  text-align: start;
+  font-size: var(--fs-text);
+  line-height: 1rem;
 }
 
 .card-button {
-    @include button-color;
-    grid-area: button;
-    margin: 0.5rem;
-    margin-bottom: 0.8rem;
-    border-radius: 5px;
-    max-width: 6rem;
-    display: flex;
-    justify-content: center;
+  @include button-color;
+  grid-area: button;
+  border-radius: 5px;
+  margin-top: auto;
+  padding: 0.4rem 0 0.4rem 0;
+  max-width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
     align-items: center;
-    img {
-        align-items: center;
-        margin-left: 0.4rem;
-    }
+    margin-left: 0.4rem;
+  }
 }
 
 .date {
-    grid-area: date;
-    text-align: end;
-    font-size: 0.8rem;
-    line-height: 1rem;
-    margin: 0.7rem 0.7rem 0.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  grid-area: date;
+  text-align: end;
+  font-size: var(--fs-small);
+  line-height: 1rem;
 }
 
 .animal-image {
-    border-radius: 5% 5% 0 0;
-    width: 100%;
-    height: 100%;
+  border-radius: 5% 5% 0 0;
+  width: 100%;
+  height: 100%;
 }
 
 
