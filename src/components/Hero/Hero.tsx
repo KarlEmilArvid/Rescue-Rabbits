@@ -10,7 +10,6 @@ interface Props {
 }
 
 const Hero = ({ animals, pickedAnimal, setPickedAnimal }: Props) => {
-  usestate;
   let firstThreeInAnimals = animals.slice(0, 3);
   return (
     <section className="hero">
