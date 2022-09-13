@@ -7,10 +7,13 @@ $green-color: #7eb780;
 $error-color: #dc3545;
 $success-color: #28a745;
 
-$fs-header: 28px;
-$fs-s-header: 20px;
-$fs-text: 16px;
-$fs-small: 10px;
+:root {
+  --fs-header: 48px;
+  --fs-logo: 26px;
+  --fs-a: 20px;
+  --fs-text: 16px;
+  --fs-small: 10px;
+}
 
 @mixin button-color {
   background-color: $blue-color;
@@ -66,4 +69,13 @@ a {
 .button-center {
   @include button;
   align-self: center;
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    --fs-header: 40px;
+    --fs-logo: 24px;
+    --fs-a: 16px;
+    --fs-text: 14px;
+  }
 }
