@@ -1,36 +1,36 @@
 @import "../../App.scss";
 
 .card {
-    position: relative;
-    width: 18rem;
-    height: 24rem;
-    margin: 3rem 1rem;
-    box-shadow: 0px 2px 6px 0px #676767;
-    border-radius: 5% 5% 0 0;
+  position: relative;
+  width: 18rem;
+  height: 24rem;
+  margin: 3rem 1rem;
+  box-shadow: 0px 2px 6px 0px #676767;
+  border-radius: 5% 5% 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  :hover {
+    cursor: pointer;
+  }
+  div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    :hover {
-      cursor: pointer;
+    // background-color: red;
+    .glass-blur {
+      height: 100%;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.26);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
     }
-    div {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // background-color: red;
-        .glass-blur {
-            height: 100%;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.26);
-            border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(2px);
-            -webkit-backdrop-filter: blur(2px)
-        }
-    }
+  }
 }
 
 .text-block {
@@ -108,15 +108,12 @@
   height: 100%;
 }
 
-
 .adopted-info {
-    position: absolute;
-    padding-bottom: 5rem;
-    font-weight: 400;
-    font-size: 3rem;
-    color: $white-color;
-    text-shadow: -2px 2px 0 $blue-color,
-                  2px 2px 0 $blue-color,
-                 2px -2px 0 $blue-color,
-                -2px -2px 0 $blue-color;
+  position: absolute;
+  padding-bottom: 5rem;
+  font-weight: 400;
+  font-size: 3rem;
+  color: $white-color;
+  text-shadow: -2px 2px 0 $blue-color, 2px 2px 0 $blue-color,
+    2px -2px 0 $blue-color, -2px -2px 0 $blue-color;
 }
