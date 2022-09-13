@@ -60,25 +60,25 @@
   .overlay {
     display: grid;
   }
-  .contactContent{
+  .contactContent {
     display: flex;
     flex-direction: column;
 
     p {
-      font-size: 1rem;
+      font-size: var(--fs-text);
       margin: 0.5rem;
     }
-    p:first-of-type{
+    p:first-of-type {
       font-weight: 700;
     }
-    p:last-of-type{
+    p:last-of-type {
       margin-top: 1.5rem;
     }
     .adress {
       text-align: center;
     }
-    .social-media{
-      div{
+    .social-media {
+      div {
         padding-top: 1rem;
       }
     }

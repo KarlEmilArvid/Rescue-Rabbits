@@ -20,14 +20,14 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    h2 {
+      font-size: var(--fs-logo);
+    }
   }
   .adress {
     .phone {
       line-height: 30px;
       padding-top: 1rem;
-      h2 {
-        font-size: 1rem;
-      }
     }
   }
   .social-media {
@@ -38,9 +38,6 @@
       display: flex;
       justify-content: center;
       gap: 2rem;
-    }
-    h2 {
-      font-size: 2rem;
     }
   }
   .service {

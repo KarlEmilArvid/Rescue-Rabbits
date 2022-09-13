@@ -1,88 +1,89 @@
 @import "../../App.scss";
 
 .showOverlay {
-    display: grid; /* none by default. toggla med display: grid */
+  display: grid; /* none by default. toggla med display: grid */
 }
-.hideOverlay{
-    display: none;
+.hideOverlay {
+  display: none;
 }
 
 .overlay {
-    position: fixed; 
-    // display: none; /* none by default. toggla med display: grid */
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.8); 
-    z-index: 2;
-    place-content: center;
-    .overlay__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: $white-color;
-        width: 60vw;
-        min-height: 60vh;
-        cursor: default;
-        padding: 2rem;
-        box-shadow: -10px 10px 14px rgba(0, 0, 0, 0.25);
-        .overlay__header {
-            display: flex;
-            justify-content: center;
-            width: 60vw;
-            position: relative;
-            // padding-right: 2rem;
-            figure {
-                position: absolute;
-                margin-left: auto;
-                right: 2rem;
-                cursor: pointer;
-                // padding-right:2rem ;
-            }
-        }
-        .overlay__main {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            padding: 0;
-            width: 100%;
-            div {
-                display: flex;
-                gap: 1rem;
-            }
-            .animalInfo__img {
-                height: fit-content;
-                max-width: 150px;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                // padding-right: 1rem;
-            }
-            .animalInfo__name {
-                color: $grey-color;
-                font-size: 2.625rem;
-                text-decoration: underline 2px rgba(94, 159, 255, 0.6);
-                text-underline-offset: 4px;
-            }
-        }
-        .overlay__main--column{
-            flex-direction: column;
-            align-items: center;
-        }
-        .overlay__footer{
-            display: flex;
-            width: 100%;
-            flex-direction: column;
-            align-items: flex-end;
-            padding: 1rem;
-            .interestedCount{
-                margin-bottom: 1rem;
-            }
-        }
+  position: fixed;
+  // display: none; /* none by default. toggla med display: grid */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  place-content: center;
+  .overlay__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $white-color;
+    width: 60vw;
+    min-height: 60vh;
+    cursor: default;
+    padding: 2rem;
+    box-shadow: -10px 10px 14px rgba(0, 0, 0, 0.25);
+    .overlay__header {
+      display: flex;
+      justify-content: center;
+      width: 60vw;
+      position: relative;
+      // padding-right: 2rem;
+      figure {
+        position: absolute;
+        margin-left: auto;
+        right: 2rem;
+        cursor: pointer;
+        // padding-right:2rem ;
+      }
     }
+    .overlay__main {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      padding: 0;
+      width: 100%;
+      div {
+        display: flex;
+        gap: 1rem;
+      }
+      .animalInfo__img {
+        height: fit-content;
+        max-width: 150px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        // padding-right: 1rem;
+      }
+      .animalInfo__name {
+        color: $grey-color;
+        font-size: var(--fs-header);
+        text-decoration: underline 2px rgba(94, 159, 255, 0.6);
+        text-underline-offset: 4px;
+      }
+    }
+    .overlay__main--column {
+      flex-direction: column;
+      align-items: center;
+    }
+    .overlay__footer {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 1rem;
+      .interestedCount {
+        font-size: var(--fs-small);
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
 
-.confirmedGif img{
-    width: 250px;
+.confirmedGif img {
+  width: 250px;
 }

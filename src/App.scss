@@ -8,11 +8,11 @@ $error-color: #dc3545;
 $success-color: #28a745;
 
 :root {
-  --fs-header: 48px;
-  --fs-logo: 26px;
-  --fs-a: 20px;
-  --fs-text: 16px;
-  --fs-small: 10px;
+  --fs-header: 54px;
+  --fs-logo: 34px;
+  --fs-a: 24px;
+  --fs-text: 20px;
+  --fs-small: 14px;
 }
 
 @mixin button-color {
@@ -24,7 +24,7 @@ $success-color: #28a745;
 @mixin button {
   @include button-color;
   padding: 0.7rem;
-  font-size: 1.5rem;
+  font-size: var(--fs-a);
   font-weight: 300;
   line-height: 29px;
   border-radius: 5px;
@@ -44,7 +44,7 @@ body {
 
 .App {
   margin: 0 auto;
-  width: 1000px;
+  width: 1200px;
   max-width: 90%;
   position: relative;
 }

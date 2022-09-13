@@ -1,27 +1,32 @@
 @import "../../App.scss";
 
 .animalInfo {
-    color: $grey-color;
-    font-size: 1.3rem;
-    max-width: 50%;
-    padding: 0;
-    div:first-of-type{
-        display: flex;
-        align-items: center;
-        p{
-            color: $blue-color;
-        }
+  color: $grey-color;
+  font-size: var(--fs-text);
+  max-width: 50%;
+  padding: 0;
+  div:first-of-type {
+    display: flex;
+    align-items: center;
+    p {
+      color: $blue-color;
     }
-    .animalInfo__location {
-        display: flex;
-        padding: 1rem 0 3rem 0;
-        figure {
-            width: 25px;
-            height: 25px;
-            .animalInfo__locationPin {
-                height: 100%;
-                width: 100%;
-            }
-        }
+  }
+  .animalInfo__age {
+    font-size: var(--fs-a);
+  }
+  .animalInfo__location {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 3rem 0;
+    font-size: var(--fs-a);
+    figure {
+      width: 25px;
+      height: 25px;
+      .animalInfo__locationPin {
+        height: 100%;
+        width: 100%;
+      }
     }
+  }
 }
