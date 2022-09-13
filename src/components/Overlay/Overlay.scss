@@ -20,6 +20,7 @@
   z-index: 2;
   place-content: center;
   .overlay__container {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +33,7 @@
     .overlay__header {
       display: flex;
       justify-content: center;
-      width: 60vw;
+      width: 100%;
       position: relative;
       // padding-right: 2rem;
       figure {
@@ -87,4 +88,27 @@
 
 .confirmedGif img {
   width: 250px;
+}
+
+@media screen and (max-width: 1100px) {
+  .overlay__container {
+    width: 90% !important;
+  }
+  .animalInfo__img {
+    max-width: 150px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .overlay__container {
+    width: 100% !important;
+    padding: 2rem 0 2rem 0 !important;
+  }
+  .overlay__main {
+    width: 50%;
+    flex-direction: column !important;
+  }
+  .overlay__info {
+    width: max-content;
+  }
 }
