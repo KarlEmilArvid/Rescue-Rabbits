@@ -48,13 +48,13 @@
     flex: 1;
     margin-bottom: 1.6rem;
     margin-left: 1rem;
-    font-size: $fs-header;
+    font-size: var(--fs-logo);
     font-weight: 500;
   }
   a {
     justify-content: flex-end;
     margin-bottom: 1.7rem;
-    font-size: $fs-s-header;
+    font-size: var(--fs-a);
     cursor: pointer;
   }
   .overlay {
