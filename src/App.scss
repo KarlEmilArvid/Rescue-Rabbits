@@ -63,6 +63,7 @@ a {
   @include button;
   background-color: $green-color;
   border: 1px solid $green-color;
+  align-self: flex-end;
 }
 
 .button-center {

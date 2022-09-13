@@ -12,6 +12,7 @@ function App() {
   const [animals, setAnimals] = useState<Animal[]>(jsonData.animals);
   const [pickedAnimal, setPickedAnimal] = useState<Animal>(jsonData.animals[1]);
   const [visibility, setVisibility] = useState<string>('overlay hideOverlay')
+  const [step, setStep] = useState<number>(1)
 
   function hideOverlay() {
     setVisibility('overlay hideOverlay')
@@ -26,7 +27,7 @@ function App() {
       <Header />
       <Hero animals={animals} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} />
       <Main showOverlay={showOverlay} animals={animals} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} />
-      <Overlay visibility={visibility} hideOverlay={hideOverlay} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} />
+      <Overlay step={step} setStep={setStep} visibility={visibility} hideOverlay={hideOverlay} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} />
       <Footer />
     </div>
   )
