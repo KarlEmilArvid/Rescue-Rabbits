@@ -12,8 +12,8 @@ interface Props {
   pickedAnimal: Animal;
   visibility: string;
   // ÄNDRA TYPER!!!!
-  hideOverlay: any;
-  setStep: any;
+  hideOverlay: () => void;
+  setStep: (num:number) => void;
   step: number;
 }
 

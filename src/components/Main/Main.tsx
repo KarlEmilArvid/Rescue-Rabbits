@@ -9,7 +9,7 @@ interface Props {
   setPickedAnimal: (pickedAnimal: Animal) => void;
   pickedAnimal: Animal;
   //BYT TYP!!!
-  showOverlay: any;
+  showOverlay: () => void;
 }
 
 const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) => {

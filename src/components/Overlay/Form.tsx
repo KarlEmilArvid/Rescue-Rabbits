@@ -13,11 +13,10 @@ interface FormState {
 }
 
 interface Props {
-    handleClick: any;
+    handleClick: () => void;
 }
 
 const Form = ({ handleClick }: Props) => {
-    // EY! Byt ut typen här.. det där ser gräsligt ut!
     const [formData, setFormData] = useState<FormState>({
         name: "",
         phoneNumber: "",
@@ -25,11 +24,10 @@ const Form = ({ handleClick }: Props) => {
         message: ""
     })
 
-    const handleSubmit = (event: any) => {
-        // event.preventDefault();
-        console.log(formData)
+    const handleSubmit = (event: React.MouseEvent<HTMLButtonElement>) => {
+        event.preventDefault()
+        console.log("test")
         handleClick();
-        console.log("hej")
         //SPara till localstore och nollställ 
     }
 
@@ -41,7 +39,7 @@ const Form = ({ handleClick }: Props) => {
 
     return (
         <section className="form">
-            <form onSubmit={handleSubmit}>
+            <form>
                 <div className="form-field">
                     <figure>
                         <img src={profile} alt="" />
@@ -70,7 +68,7 @@ const Form = ({ handleClick }: Props) => {
                     <input onChange={handleChange} value={formData.message} id="message" type="text" name="message" placeholder="Meddelande (frivilligt)" />
                 </div>
                 <footer className="form__footer">
-                    <button onClick={() => { handleSubmit }} className="button-green">Skicka</button>
+                    <button onClick={handleSubmit} className="button-green">Skicka</button>
                 </footer>
             </form>
         </section>
