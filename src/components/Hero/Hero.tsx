@@ -1,6 +1,5 @@
 import map from "../../assets/MapPin.svg";
 import { Animal } from "../../models/data";
-import AnimalCard from "../AnimalCard/AnimalCard";
 import "./Hero.scss";
 
 interface Props {
@@ -9,8 +8,8 @@ interface Props {
   pickedAnimal: Animal;
 }
 
-const Hero = ({ animals, pickedAnimal, setPickedAnimal }: Props) => {
-  let firstThreeInAnimals = animals.slice(0, 3);
+const Hero = () => {
+
   return (
     <section className="hero">
       <h1>
@@ -35,13 +34,48 @@ const Hero = ({ animals, pickedAnimal, setPickedAnimal }: Props) => {
           </span>
         </div>
       </h1>
-      {firstThreeInAnimals.map((animals, pickedAnimal, setPickedAnimal) => (
-        <AnimalCard
-          animal={animals}
-          pickedAnimal={pickedAnimal}
-          setPickedAnimal={setPickedAnimal}
-        />
-      ))}
+      <section className='card'>
+        <img className='animal-image' src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"/>
+        <section className='text-block'>
+          <h2 className='name'>Pär</h2>
+          <section className="location">
+            <p>
+              <img className='map-pin' src={map} alt='map pin'/>Umeå
+            </p>
+          </section>
+          <p className='age'> 4 år</p>
+          <p className='date'>Letat efter ett hem sedan 2018-06-12</p>
+          <button className='card-button'>Läs mer</button>
+        </section>
+      </section>
+      <section className='card'>
+        <img className='animal-image' src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"/>
+        <section className='text-block'>
+          <h2 className='name'>Pär</h2>
+          <section className="location">
+            <p>
+              <img className='map-pin' src={map} alt='map pin'/>Umeå
+            </p>
+          </section>
+          <p className='age'> 4 år</p>
+          <p className='date'>Letat efter ett hem sedan 2018-06-12</p>
+          <button className='card-button'>Läs mer</button>
+        </section>
+      </section>
+      <section className='card'>
+        <img className='animal-image' src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"/>
+        <section className='text-block'>
+          <h2 className='name'>Pär</h2>
+          <section className="location">
+            <p>
+              <img className='map-pin' src={map} alt='map pin'/>Umeå
+            </p>
+          </section>
+          <p className='age'> 4 år</p>
+          <p className='date'>Letat efter ett hem sedan 2018-06-12</p>
+          <button className='card-button'>Läs mer</button>
+        </section>
+      </section>
       <article className="hero-desc">
         <p>
           Rescue Rabbit är en plats där djur kan omplaceras. Vi tror på starkt
