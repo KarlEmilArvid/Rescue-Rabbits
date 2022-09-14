@@ -44,7 +44,7 @@ const Overlay = ({
   }
 
   if (step === 2) {
-    // Formulär overlay
+    // Steg 2 - Formulär
     return (
       <section className={visibility}>
         <section className="overlay-container">
@@ -75,7 +75,7 @@ const Overlay = ({
       </section>
     );
   } else if (step === 3) {
-    //Bekräftat overlay
+    //Steg 3 - Bekräftat
     return (
       <section className={visibility}>
         <section className="overlay-container">
@@ -111,7 +111,7 @@ const Overlay = ({
     );
   } else {
     return (
-      //läs mer om djuret overlay
+      //Steg 1 - Läs mer
       <section className={visibility}>
         <section className="overlay-container">
           <header className="overlay-header">
@@ -159,9 +159,7 @@ const Overlay = ({
               <p className="interested-count">
                 {pickedAnimal.interested} personer är intresserade av {pickedAnimal.name}
               </p>
-              <button
-                onClick={() => {
-                  handleClick();
+              <button onClick={() => {handleClick();
                 }}
                 className="button-overlay"
               >
