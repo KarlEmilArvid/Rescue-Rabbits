@@ -1,12 +1,4 @@
-import map from "../../assets/MapPin.svg";
-import { Animal } from "../../models/data";
 import "./Hero.scss";
-
-interface Props {
-  animals: Animal[];
-  setPickedAnimal: (pickedAnimal: Animal) => void;
-  pickedAnimal: Animal;
-}
 
 const Hero = () => {
 
