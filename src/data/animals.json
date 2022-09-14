@@ -164,6 +164,117 @@
       "dateAdded": "2022-08-19",
       "image": "https://images.unsplash.com/photo-1568152950566-c1bf43f4ab28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 15
+    },
+    {
+      "name": "Cleo",
+      "type": "Kakadua",
+      "age": 2,
+      "location": "Karlskoga",
+      "desc": "Hon heter Cleo och är mycket sällskaplig men nu är hon mycket ensam och mår nog inte bra av det och jag kan inte skaffa någon kompis till henne.",
+      "adopted": true,
+      "dateAdded": "2022-08-02",
+      "image": "https://images.unsplash.com/photo-1615827453817-128e639ba2cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHBhcmFrZWV0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 16
+    },
+    {
+      "name": "Tiger",
+      "type": "Hund",
+      "age": 6,
+      "location": "Grums",
+      "desc": "Till Tiger söker vi ett lugnt hem med hundvana, gärna beläget nära skogen. Vi ser gärna att ni har intresse för att träna hund och har en aktivare vardag. Tiger skulle trivas med både att vara ensamhund eller ha en snäll lekkompis. Då han är en lite försiktigare kille ser vi gärna att eventuella barn är närmare tonåren.",
+      "adopted": false,
+      "dateAdded": "2022-01-02",
+      "image": "https://images.unsplash.com/photo-1566710582818-d673dc761201?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 17
+    },
+    {
+      "name": "Merlin",
+      "type": "Papegoja",
+      "age": 2,
+      "location": "Torsby",
+      "desc": "Väldigt tam, rar och pratglad, sitter gärna på axeln och vill vara med i det mesta. Merlin har en bur där han äter, leker och sover, men är annars fri och sitter på och inte i buren.",
+      "adopted": false,
+      "dateAdded": "2022-07-07",
+      "image": "https://images.unsplash.com/photo-1512819432727-dbcb57a06f13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGFycm90fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 18
+    },
+    {
+      "name": "Simba",
+      "type": "Kanin",
+      "age": 2,
+      "location": "Filipstad",
+      "desc": "Nu söker våran fina Simba efter nytt hem efter ett sent återbud. Han är av rasen dvärgvädur och ca 2 år gammal. Han är en helt underbar kanin, väldigt nyfiken och kommer alltid springade fram till en och vill gosa, han är väldigt lugn av sig.",
+      "adopted": false,
+      "dateAdded": "2022-09-14",
+      "image": "https://images.unsplash.com/photo-1591382386627-349b692688ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmFiYml0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 19
+    },
+    {
+      "name": "Roffe",
+      "type": "Katt",
+      "age": 2,
+      "location": "Karlstad",
+      "desc": "Roffe är en otroligt vacker kille, högbent och smärt. Han har mycket energi som han behöver kunna få utlopp för. Så Roffe behöver en större yta att bo på, allra helst att han kan få tillgång till utevistelse på sikt när han bott in sig. Roffe vill bo med en tjejkattkompis med lite skinn på näsan, hon ska vara snäll men inte låta någon köra med henne",
+      "adopted": false,
+      "dateAdded": "2022-04-14",
+      "image": "https://images.unsplash.com/photo-1503777119540-ce54b422baff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 20
+    },
+    {
+      "name": "Tobbe",
+      "type": "Katt",
+      "age": 4,
+      "location": "Hammarö",
+      "desc": "Försiktig, tycker inte om när det blir mycket ljud och rörelse runt honom-då blir han stressad och drar sig undan. Han vill bli klappad när han känner sig trygg. Har blivit mycket mer gosig senaste tiden! Han söker ett lugnt hem utan små barn eller hundar, där matte/husse har haft katt tidigare",
+      "adopted": false,
+      "dateAdded": "2022-03-22",
+      "image": "https://images.unsplash.com/photo-1640384974326-3e72680e0fb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 21
+    },
+    {
+      "name": "Jordan",
+      "type": "Kanin",
+      "age": 1,
+      "location": "Hagfors",
+      "desc": "Försiktig, tycker inte om när det blir mycket ljud och rörelse runt honom-då blir han stressad och drar sig undan. Han vill bli klappad när han känner sig trygg. Har blivit mycket mer gosig senaste tiden! Han söker ett lugnt hem utan små barn eller hundar, där matte/husse har haft katt tidigare",
+      "adopted": false,
+      "dateAdded": "2022-03-22",
+      "image": "https://images.unsplash.com/photo-1640384974326-3e72680e0fb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 22
+    },
+    {
+      "name": "Maggan",
+      "type": "Marsvin",
+      "age": 7,
+      "location": "Örebro",
+      "desc": "En äldre dam som söker nytt hem, hon är van vid små livliga barn men kunde tyvärr ej stanna i sin familj på grund av allergier. Hon är en livlig dam som gärna springer omkring eller ligger och tar det lugnt i knäet eller på höften i soffan på kvällarna.",
+      "adopted": true,
+      "dateAdded": "2021-02-02",
+      "image": "https://images.unsplash.com/photo-1658938821608-7260a793cdc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzZ8fGd1aW5lYSUyMHBpZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 23
+    },
+    {
+      "name": "Sune",
+      "type": "Papegoja",
+      "age": 7,
+      "location": "Stråssa",
+      "desc": "Han bor i bur, inte tam, flyger i lägenheten ibland.",
+      "adopted": true,
+      "dateAdded": "2021-08-11",
+      "image": "https://images.unsplash.com/photo-1602009941965-2bdde47c6e27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBhcnJvdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 24
+    },
+    {
+      "name": "Göte",
+      "type": "Minigris",
+      "age": 7,
+      "location": "Säffle",
+      "desc": "Van att bo ute i stall och ha tillgång till utevistelse. Göte är jättegosig och älskar att bli kliad på magen.",
+      "adopted": false,
+      "dateAdded": "2021-04-16",
+      "image": "https://images.unsplash.com/photo-1583205188670-ce90796eb01c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI0fHxtaW5pJTIwcGlnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "id": 25
     }
+    
   ]
 }
