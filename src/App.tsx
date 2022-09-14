@@ -16,12 +16,13 @@ function App() {
 
   console.log(animals)
 
-  function addInterest(): number {
+  function addInterest(): number|null {
     animals.map((animal) => {
       if (animal.id == pickedAnimal.id) {
         return animal.interested = animal.interested + 1;
       }
     })
+    return null
   }
 
   function hideOverlay() {
