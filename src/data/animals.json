@@ -26,7 +26,7 @@
     },
     {
       "name": "Polly",
-      "type": "Papegoja",
+      "type": "Fågel",
       "age": 15,
       "location": "Vålberg",
       "desc": "Pratglad tjej som gärna sitter med på axeln. ",
@@ -206,7 +206,7 @@
     },
     {
       "name": "Merlin",
-      "type": "Papegoja",
+      "type": "Fågel",
       "age": 2,
       "location": "Torsby",
       "desc": "Väldigt tam, rar och pratglad, sitter gärna på axeln och vill vara med i det mesta. Merlin har en bur där han äter, leker och sover, men är annars fri och sitter på och inte i buren.",
@@ -278,7 +278,7 @@
     },
     {
       "name": "Sune",
-      "type": "Papegoja",
+      "type": "Fågel",
       "age": 7,
       "location": "Stråssa",
       "desc": "Han bor i bur, inte tam, flyger i lägenheten ibland.",
