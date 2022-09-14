@@ -78,6 +78,15 @@
     }
   }
 }
+.button-center {
+  @include button;
+  align-self: center;
+}
+
+.button-overlay {
+  @include button;
+  width: fit-content;
+}
 
 .confirmedGif img {
   width: 250px;

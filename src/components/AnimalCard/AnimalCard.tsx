@@ -16,7 +16,7 @@ const AnimalCard = ({
   pickedAnimal,
   setPickedAnimal,
 }: Props) => {
-  function handleClick(): void {
+  function handleClick(): void { // Togglar Overlay
     showOverlay();
     setPickedAnimal(animal);
   }

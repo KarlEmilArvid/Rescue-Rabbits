@@ -102,8 +102,7 @@ const Overlay = ({
               onClick={() => {
                 handleClick();
               }}
-              className="button-overlay button-center"
-            >
+              className="button-center">
               Toppen!
             </button>
           </footer>
