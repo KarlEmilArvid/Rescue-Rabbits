@@ -115,7 +115,8 @@ const Overlay = ({
       <section className={visibility}>
         <section className="overlay-container">
           <header className="overlay-header">
-            <Breadcrumbs step={step} />
+            
+            {pickedAnimal.adopted ?  <></> : <Breadcrumbs step={step} /> }
             <figure
               onClick={() => {
                 handleClose();
