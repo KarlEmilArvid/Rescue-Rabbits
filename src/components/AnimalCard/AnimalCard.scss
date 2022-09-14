@@ -117,7 +117,7 @@
     2px -2px 0 $blue-color, -2px -2px 0 $blue-color;
 }
 
-@media only screen and (min-width: 731px) and (max-width: 1066px) {
+@media only screen and (min-width: 731px) and (max-width: 1110px) {
   .card {
     width: 16rem;
     margin: 2rem 0rem;
@@ -147,8 +147,6 @@
     .text-block {
       height: 6rem;
     }
-  }
-  .date {
   }
   .card-button {
     padding: 2px 3px;

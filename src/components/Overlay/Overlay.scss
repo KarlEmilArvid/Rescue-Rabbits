@@ -106,9 +106,11 @@
   }
   .overlay__main {
     width: 50%;
-    flex-direction: column !important;
   }
   .overlay__info {
     width: max-content;
+  }
+  .overlay__footer {
+    margin-right: 2rem;
   }
 }
