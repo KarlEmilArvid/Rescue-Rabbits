@@ -10,7 +10,7 @@ import "./Header.scss";
 
 const Header = () => {
   const [toggleContact, setToggleContact] = useState<boolean>(true) // Togglar kontakt overlay
-  
+
   useEffect(() => { // Gör så att användaren inte kan scrolla på mainsidan utan bara i overlayen
     if (toggleContact) {
       document.body.style.overflow = 'unset';
@@ -18,7 +18,7 @@ const Header = () => {
       document.body.style.overflow = 'hidden';
     }
   }, [toggleContact])
-  
+
   return (
     <header className="header">
       <div className="header-content">
@@ -29,8 +29,8 @@ const Header = () => {
         <a onClick={() => setToggleContact(!toggleContact)}> Kontakta oss</a>
         {toggleContact ? (<></>) : (
           <section className="overlay">
-            <section className="overlay__container">
-              <header className="overlay__header">
+            <section className="overlay-container">
+              <header className="overlay-header">
                 <figure>
                   <img src={close} alt="close button" onClick={() => { setToggleContact(!toggleContact) }} />
                 </figure>
@@ -39,8 +39,8 @@ const Header = () => {
                 <figure>
                   <img src={Logo} alt="logo" />
                 </figure>
-                <h2 className='animalInfo__name'>Kontakta oss</h2>
-                <div className="contactContent">
+                <h2 className='animal-info-name'>Kontakta oss</h2>
+                <div className="contact-content">
                   <section className="adress">
                     <p>Rescue Rabbits</p>
                     <p>Sheltergatan 3</p>

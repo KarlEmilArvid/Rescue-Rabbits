@@ -1,6 +1,6 @@
 @import "../../models/variables";
 
-.animalInfo {
+.animal-info {
   margin-top: 1.5rem;
   max-width: 50%;
   color: $grey-color;
@@ -12,7 +12,7 @@
       color: $blue-color;
     }
   }
-  .animalInfo__location {
+  .animal-info-location {
     display: flex;
     align-items: center;
     padding: 1rem 0 3rem 0;
@@ -20,28 +20,28 @@
     figure {
       width: 25px;
       height: 25px;
-      .animalInfo__locationPin {
+      .animal-info-location-pin {
         height: 100%;
         width: 100%;
       }
     }
   }
 }
-.overlay__info {
+.overlay-info {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  .animalInfo__age {
+  .animal-info-age {
     font-size: var(--fs-a);
   }
-  .animalInfo__location {
+  .animal-info-location {
     display: flex;
     align-items: center;
     font-size: var(--fs-a);
     figure {
       width: 25px;
       height: 25px;
-      .animalInfo__locationPin {
+      .animal-info-location-pin {
         height: 100%;
         width: 100%;
       }

@@ -60,7 +60,7 @@ const Form = ({ handleClick }: Props) => {
                     </figure>
                     <input onChange={handleChange} value={formData.message} id="message" type="text" name="message" placeholder="Meddelande (frivilligt)" />
                 </div>
-                <footer className="form__footer">
+                <footer className="form-footer">
                     <input type="submit" id="button-green" value="Skicka" /> 
                 </footer>
             </form>

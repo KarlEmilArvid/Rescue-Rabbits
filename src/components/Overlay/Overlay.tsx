@@ -47,8 +47,8 @@ const Overlay = ({
     //Formiläret   <--Skrivet av Linus
     return (
       <section className={visibility}>
-        <section className="overlay__container">
-          <header className="overlay__header">
+        <section className="overlay-container">
+          <header className="overlay-header">
             <Breadcrumbs step={step} />
             <figure>
               <img
@@ -63,11 +63,11 @@ const Overlay = ({
           <main className="overlay__main overlay__main--column">
             <div>
               <img
-                className="animalInfo__img"
+                className="animal-info-image"
                 src={pickedAnimal.image}
                 alt=""
               />
-              <h2 className="animalInfo__name">{pickedAnimal.name}</h2>
+              <h2 className="animal-info-name">{pickedAnimal.name}</h2>
             </div>
             <Form handleClick={handleClick} />
           </main>
@@ -78,8 +78,8 @@ const Overlay = ({
     //Bekräftat overlay
     return (
       <section className={visibility}>
-        <section className="overlay__container">
-          <header className="overlay__header">
+        <section className="overlay-container">
+          <header className="overlay-header">
             <Breadcrumbs step={step} />
             <figure>
               <img
@@ -97,7 +97,7 @@ const Overlay = ({
             </figure>
             <p>Tack för visat intresse. Vi hör av oss så fort vi kan.</p>
           </main>
-          <footer className="overlay__footer overlay__footer--center">
+          <footer className="overlay-footer">
             <button
               onClick={() => {
                 handleClick();
@@ -114,8 +114,8 @@ const Overlay = ({
     return (
       //läs mer om djuret overlay
       <section className={visibility}>
-        <section className="overlay__container">
-          <header className="overlay__header">
+        <section className="overlay-container">
+          <header className="overlay-header">
             <Breadcrumbs step={step} />
             <figure
               onClick={() => {
@@ -126,26 +126,26 @@ const Overlay = ({
             </figure>
           </header>
           <main className="overlay__main">
-            <section className="overlay__info">
+            <section className="overlay-info">
               <img
-                className="animalInfo__img"
+                className="animal-info-image"
                 src={pickedAnimal.image}
                 alt=""
               />
               <div>
-                <h2 className="animalInfo__name">{pickedAnimal.name}</h2>
+                <h2 className="animal-info-name">{pickedAnimal.name}</h2>
                 {pickedAnimal.adopted ? <p>Adopterad</p> : <></>}
               </div>
-              <p className="animalInfo__age">{pickedAnimal.age} år</p>
-              <div className="animalInfo__location">
-                <figure className="animalInfo__locationPin">
+              <p className="animal-info-age">{pickedAnimal.age} år</p>
+              <div className="animal-info-location">
+                <figure className="animal-info-location-pin">
                   <img
-                    className="animalInfo__locationPin"
+                    className="animal-info-location-pin"
                     src={locationPin}
                     alt="location pin"
                   />
                 </figure>
-                <p className="animalInfo__place">{pickedAnimal.location}</p>
+                <p>{pickedAnimal.location}</p>
               </div>
             </section>
             <AnimalDescription
@@ -156,8 +156,8 @@ const Overlay = ({
           {pickedAnimal.adopted ? (
             <></>
           ) : (
-            <footer className="overlay__footer">
-              <p className="interestedCount">
+            <footer className="overlay-footer">
+              <p className="interested-count">
                 {pickedAnimal.interested} personer är intresserade av {pickedAnimal.name}
               </p>
               <button

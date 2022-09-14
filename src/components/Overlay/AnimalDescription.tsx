@@ -9,8 +9,8 @@ interface Props {
 
 const AnimalDescription = ({ pickedAnimal }: Props) => {
   return (
-    <section className="animalInfo">
-      <p className="animalInfo__description">{pickedAnimal.desc}</p>
+    <section className="animal-info">
+      <p>{pickedAnimal.desc}</p>
     </section>
   );
 };
