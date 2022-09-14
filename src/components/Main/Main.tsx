@@ -22,7 +22,7 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) =>
     setanimalsToShow(animals.filter(animal => animal.type.toLowerCase().includes(query) || animal.location.toLowerCase().includes(query)));
   }
 
-  useEffect(() => {
+  useEffect(() => { 
     setanimalsToShow(animals.filter(animal => animal.type.toLowerCase().includes(query) || animal.location.toLowerCase().includes(query)));
     setLoad(cardsShown)
   }, [query]);
@@ -50,8 +50,7 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) =>
         </section>
       </section>
       <section id="animal-list">
-        {animals?.filter((animal) =>
-          animal.type.toLowerCase().includes(query) || animal.location.toLowerCase().includes(query)).slice(0, load)?.map((animal) => (
+        {animalsToShow.slice(0, load)?.map((animal) => (
             <AnimalCard showOverlay={showOverlay} animal={animal} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} key={animal.id} />
           ))}
       </section>
