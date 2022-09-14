@@ -43,11 +43,6 @@
       }
     }
     .overlay__main {
-      display: flex;
-      justify-content: space-around;
-      padding: 1rem;
-      gap: 1rem;
-      width: 100%;
       @extend %overlay;
       div {
         display: flex;
