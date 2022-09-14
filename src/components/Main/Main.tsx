@@ -17,9 +17,9 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) =>
   const [load, setLoad] = useState<number>(cardsShown)
   const [animalsToShow, setanimalsToShow] = useState<Animal[]>(animals.filter(animal => animal.type.toLowerCase().includes(query) || animal.location.toLowerCase().includes(query)))
   const [showButton, setshowButton] = useState<boolean>(true)
-  const loadMoreCards: () => void = () => {
+
+  const loadMoreCards: () => void = () => { 
     setLoad(load + cardsShown);
-    setanimalsToShow(animals.filter(animal => animal.type.toLowerCase().includes(query) || animal.location.toLowerCase().includes(query)));
   }
 
   useEffect(() => { 
