@@ -22,12 +22,12 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) =>
     setLoad(load + cardsShown);
   }
 
-  useEffect(() => { 
+  useEffect(() => { // Uppdaterar vilka och hur många djur som ska visas
     setanimalsToShow(animals.filter(animal => animal.type.toLowerCase().includes(query) || animal.location.toLowerCase().includes(query)));
     setLoad(cardsShown)
   }, [query]);
 
-  useEffect(() => {
+  useEffect(() => { // Togglar Visa mer knappen
     if (animalsToShow.length == load || animalsToShow.length < load) {
       setshowButton(false)
     } else {
