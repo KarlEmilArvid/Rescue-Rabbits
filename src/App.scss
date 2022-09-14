@@ -12,6 +12,9 @@ body {
   background-color: $white-color;
   overflow-x: hidden;
 }
+.noScroll { 
+  overflow-x: hidden;
+}
 
 .App {
   margin: 0 auto;
