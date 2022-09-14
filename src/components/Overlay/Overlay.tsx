@@ -133,7 +133,7 @@ const Overlay = ({
               />
               <div>
                 <h2 className="animal-info-name">{pickedAnimal.name}</h2>
-                {pickedAnimal.adopted ? <p>Adopterad</p> : <></>}
+                {pickedAnimal.adopted ? <p className="adopted-tag">Adopterad</p> : <></>}
               </div>
               <p className="animal-info-age">{pickedAnimal.age} år</p>
               <div className="animal-info-location">

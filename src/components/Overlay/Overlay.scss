@@ -47,6 +47,8 @@
       div {
         display: flex;
         gap: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
       }
       .animal-info-image {
         height: fit-content;
@@ -59,6 +61,9 @@
         font-size: var(--fs-header);
         text-decoration: underline 2px rgba(94, 159, 255, 0.6);
         text-underline-offset: 4px;
+      }
+      .adopted-tag {
+        color: $blue-color
       }
     }
     .overlay__main--column {
