@@ -14,6 +14,7 @@ interface Props {
   pickedAnimal: Animal;
   visibility: string;
   hideOverlay: () => void;
+  addInterest: () => void;
 }
 
 const Overlay = ({
@@ -21,11 +22,13 @@ const Overlay = ({
   hideOverlay,
   setPickedAnimal,
   pickedAnimal,
+  addInterest
 }: Props) => {
   const [step, setStep] = useState<number>(1);
 
   function handleClick(): void {
     if (step === 3) {
+      addInterest();
       hideOverlay();
       setStep(1);
     } else {
@@ -155,7 +158,7 @@ const Overlay = ({
           ) : (
             <footer className="overlay__footer">
               <p className="interestedCount">
-                X personer är intresserade av {pickedAnimal.name}
+                {pickedAnimal.interested} personer är intresserade av {pickedAnimal.name}
               </p>
               <button
                 onClick={() => {

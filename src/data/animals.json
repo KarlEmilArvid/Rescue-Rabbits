@@ -7,6 +7,7 @@
       "location": "Borlänge",
       "desc": "Han söker nytt hem i lugnare område och i hus då livet i lägenhet  inne i ett bostadsområde stressar honom med alla ljud från grannar och utanför. Det gör att han inte får någon ro till att varken äta, sova eller göra sina behov mesta av tiden. Vaccinerad och chippad.",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-08-16",
       "image": "https://images.unsplash.com/photo-1575859431774-2e57ed632664?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 1
@@ -18,6 +19,7 @@
       "location": "Sunne",
       "desc": "Vår kankatt söker ett nytt hem med utevistelse. För närvarandet bor han i en lägenhet och har inte tillgång till att få vara ute och springa och leka som han behöver. Han är en snäll kille som tycker om att mysa (när han själv får bestämma) och varken bits eller rivs. Hans favoriter är mys, vara ute, laserpekaren och kattgodis (att leta gömda godisar är extra roligt).     Att ta det lugnt och sova är också en favorit. Han ogillar att åka bil. Han är kastrerad, öronmärkt och van utekatt sedan tidigare. Vi hoppas att du/ni vill ge honom en chans och ett nytt kärleksfullt hem.",
       "adopted": true,
+      "interested": 0,
       "dateAdded": "2022-09-06",
       "image": "https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 2
@@ -29,6 +31,7 @@
       "location": "Vålberg",
       "desc": "Pratglad tjej som gärna sitter med på axeln. ",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-08-03",
       "image": "https://images.unsplash.com/photo-1544923408-75c5cef46f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFycm90fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "id": 3
@@ -40,6 +43,7 @@
       "location": "Borås",
       "desc": "Är inte jättetam men går utan att problem att plocka upp i famnen och klappa (om man gör det med försiktighet och respekt) utan att man blir biten. Han är väldigt reserverad men kommer fram till maten och är väldigt matglad som alla marsvin. ",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-09-02",
       "image": "https://images.unsplash.com/photo-1618252903592-2b8c90c43a6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Z3VpbmVhJTIwcGlnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "id": 4
@@ -51,6 +55,7 @@
       "location": "Säffle",
       "desc": "Han är lätt att träna och man kan utan vidare gå en promenad med honom. Porkchop har inga kända sjukdomar och kommer att avmaskas innan omplacering. Ej kastrerade och ej vaccinerade. Lägenhet är inget hem för en gris då de behöver få böka i jorden.",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-05-13",
       "image": "https://images.unsplash.com/photo-1585668678537-98f7d5e9d731?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1pbmklMjBwaWd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "id": 5
@@ -62,6 +67,7 @@
       "location": "Trollhättan",
       "desc": "Han är snäll, världens sötaste och helt enkelt världens underbaraste vovve. Det är på grund av familjeskäl vi dessvärre behöver hitta ett nytt hem till denna underbara kille. Skulle passa alla familjer (såväl barn som äldre) då det är en väldigt familjekär hund. Han är väldigt kelig och gillar att vara nära i famnen. Som alla valpar gör så gillar han också att utforska och leka. Han är aktiv sällskapshund som följer med på längre promenader i skogen och gör sällskap hemma dessutom så är han även rumsren som är ganska bra för hans ålder. Fullt frisk.",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-07-23",
       "image": "https://images.unsplash.com/photo-1597586755950-3e029f817855?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aHVuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 6
@@ -73,6 +79,7 @@
       "location": "Göteborg",
       "desc": "Väldigt fin tjej med bra psyke, samtidigt väldigt valpbusig. ",
       "adopted": true,
+      "interested": 0,
       "dateAdded": "2022-08-11",
       "image": "https://images.unsplash.com/photo-1599744975877-53aaa14cf55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGh1bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "id": 7
@@ -84,6 +91,7 @@
       "location": "Trelleborg",
       "desc": "Om ni letar efter en mycket snäll, trygg och gullig kille, så har ni kommit rätt. Jag är en kille som är väldigt smart, lättlärd och tillgiven. Jag vill alltid delta, leka och gosa med min familj. Längtar efter ett tryggt hem",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-02-01",
       "image": "https://images.unsplash.com/photo-1613214360285-06ab9197797c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fGh1bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "id": 8
@@ -95,6 +103,7 @@
       "location": "Göteborg",
       "desc": "Hon har stor personlighet och älskar kli på magen. Loppan tycker väldigt mycket om andra djur och hon älskar att leka och busa, hon är expert på att dra igång andra katter i lek. Hon söker nytt hem endast som sällskap bara inte för showen. Hon är hund och barnvan.  Hon är vaccinerad, vet besiktad, Avmaskad, Ohyreskontrollerad.",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-06-21",
       "image": "https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 9
@@ -106,6 +115,7 @@
       "location": "Mora",
       "desc": "Han är innekatt och ska vara innekatt men inhägnad skulle nog funka. Han är en underbar katt, gillar att gosa på sina premisser, älskar att busa. Han har aldrig någonsin använt klor eller tänder.",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-08-05",
       "image": "https://images.unsplash.com/photo-1569591159212-b02ea8a9f239?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 10
@@ -117,6 +127,7 @@
       "location": "Solna",
       "desc": "Vårt gulliga marsvin Popcorn är till salu. Han är ca 3 år och väldigt snäll och pigg! Marsvinskompisen Grisen dog för ett par veckor sedan och nu behöver Popcorn ett nytt hem och en ny kompis.",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-06-03",
       "image": "https://images.unsplash.com/photo-1655527291171-73c4677c3281?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fGd1aW5lYSUyMHBpZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 11
@@ -128,6 +139,7 @@
       "location": "Umeå",
       "desc": "Är väldigt snäll och världens största kelgris som älskar allt och alla. Aldrig varit sjuk och bra psyke.",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-08-19",
       "image": "https://images.unsplash.com/photo-1529429617124-95b109e86bb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 12
@@ -139,6 +151,7 @@
       "location": "Göteborg",
       "desc": "Väldigt fint tjej katt som letar after en ny hem. Hon är jätte fint och älskar att leka och mysa, jätte snäll och lugn. Hon är frisk och vaccinerade , går i lådan och äter bra. Hon har egen låda och låd matta och massa leksaker och andra grejer som hon får tar med allt till den nya hemmet.",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-07-29",
       "image": "https://images.unsplash.com/photo-1548366086-7f1b76106622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 13
@@ -150,6 +163,7 @@
       "location": "Umeå",
       "desc": "Hon har extremt mycket energi och behöver många och långa promenader dagligen vilket vi inte kan erbjuda henne länge på grund av ändrade familjeförhållanden. Hon gillar inte att vara ensam långa stunder och vill helst vara där vi är så hon kan följa oss med blicken. Hon vaktar tomten och skäller ibland på grannarna men i själva verket är hon bara en glad hund som vill leka.",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-08-19",
       "image": "https://images.unsplash.com/photo-1575785662490-1e3ce6806ed5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 14
@@ -161,6 +175,7 @@
       "location": "Karlstad",
       "desc": "Idag bor han som innekatt i centrala Göteborg, tillsammans med mig och två medelstora hundar. Gunnar är en kelig och lekfull  kille som kan resonera med sig själv när han  leker sina egna lekar, berättar när han är hungrig men gör det ganska försynt utan krävande skrik. På natten ligger han gärna nära dig och sover med en tass på din arm eller axel.",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-08-19",
       "image": "https://images.unsplash.com/photo-1568152950566-c1bf43f4ab28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 15
@@ -172,6 +187,7 @@
       "location": "Karlskoga",
       "desc": "Hon heter Cleo och är mycket sällskaplig men nu är hon mycket ensam och mår nog inte bra av det och jag kan inte skaffa någon kompis till henne.",
       "adopted": true,
+      "interested": 0,
       "dateAdded": "2022-08-02",
       "image": "https://images.unsplash.com/photo-1615827453817-128e639ba2cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHBhcmFrZWV0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "id": 16
@@ -183,6 +199,7 @@
       "location": "Grums",
       "desc": "Till Tiger söker vi ett lugnt hem med hundvana, gärna beläget nära skogen. Vi ser gärna att ni har intresse för att träna hund och har en aktivare vardag. Tiger skulle trivas med både att vara ensamhund eller ha en snäll lekkompis. Då han är en lite försiktigare kille ser vi gärna att eventuella barn är närmare tonåren.",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-01-02",
       "image": "https://images.unsplash.com/photo-1566710582818-d673dc761201?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 17
@@ -194,6 +211,7 @@
       "location": "Torsby",
       "desc": "Väldigt tam, rar och pratglad, sitter gärna på axeln och vill vara med i det mesta. Merlin har en bur där han äter, leker och sover, men är annars fri och sitter på och inte i buren.",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-07-07",
       "image": "https://images.unsplash.com/photo-1512819432727-dbcb57a06f13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGFycm90fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "id": 18
@@ -205,6 +223,7 @@
       "location": "Filipstad",
       "desc": "Nu söker våran fina Simba efter nytt hem efter ett sent återbud. Han är av rasen dvärgvädur och ca 2 år gammal. Han är en helt underbar kanin, väldigt nyfiken och kommer alltid springade fram till en och vill gosa, han är väldigt lugn av sig.",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-09-14",
       "image": "https://images.unsplash.com/photo-1591382386627-349b692688ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmFiYml0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "id": 19
@@ -216,6 +235,7 @@
       "location": "Karlstad",
       "desc": "Roffe är en otroligt vacker kille, högbent och smärt. Han har mycket energi som han behöver kunna få utlopp för. Så Roffe behöver en större yta att bo på, allra helst att han kan få tillgång till utevistelse på sikt när han bott in sig. Roffe vill bo med en tjejkattkompis med lite skinn på näsan, hon ska vara snäll men inte låta någon köra med henne",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-04-14",
       "image": "https://images.unsplash.com/photo-1503777119540-ce54b422baff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 20
@@ -227,6 +247,7 @@
       "location": "Hammarö",
       "desc": "Försiktig, tycker inte om när det blir mycket ljud och rörelse runt honom-då blir han stressad och drar sig undan. Han vill bli klappad när han känner sig trygg. Har blivit mycket mer gosig senaste tiden! Han söker ett lugnt hem utan små barn eller hundar, där matte/husse har haft katt tidigare",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-03-22",
       "image": "https://images.unsplash.com/photo-1640384974326-3e72680e0fb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 21
@@ -238,6 +259,7 @@
       "location": "Hagfors",
       "desc": "Försiktig, tycker inte om när det blir mycket ljud och rörelse runt honom-då blir han stressad och drar sig undan. Han vill bli klappad när han känner sig trygg. Har blivit mycket mer gosig senaste tiden! Han söker ett lugnt hem utan små barn eller hundar, där matte/husse har haft katt tidigare",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2022-03-22",
       "image": "https://images.unsplash.com/photo-1640384974326-3e72680e0fb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 22
@@ -249,6 +271,7 @@
       "location": "Örebro",
       "desc": "En äldre dam som söker nytt hem, hon är van vid små livliga barn men kunde tyvärr ej stanna i sin familj på grund av allergier. Hon är en livlig dam som gärna springer omkring eller ligger och tar det lugnt i knäet eller på höften i soffan på kvällarna.",
       "adopted": true,
+      "interested": 0,
       "dateAdded": "2021-02-02",
       "image": "https://images.unsplash.com/photo-1658938821608-7260a793cdc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzZ8fGd1aW5lYSUyMHBpZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 23
@@ -260,6 +283,7 @@
       "location": "Stråssa",
       "desc": "Han bor i bur, inte tam, flyger i lägenheten ibland.",
       "adopted": true,
+      "interested": 0,
       "dateAdded": "2021-08-11",
       "image": "https://images.unsplash.com/photo-1602009941965-2bdde47c6e27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBhcnJvdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "id": 24
@@ -271,6 +295,7 @@
       "location": "Säffle",
       "desc": "Van att bo ute i stall och ha tillgång till utevistelse. Göte är jättegosig och älskar att bli kliad på magen.",
       "adopted": false,
+      "interested": 0,
       "dateAdded": "2021-04-16",
       "image": "https://images.unsplash.com/photo-1583205188670-ce90796eb01c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI0fHxtaW5pJTIwcGlnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "id": 25
