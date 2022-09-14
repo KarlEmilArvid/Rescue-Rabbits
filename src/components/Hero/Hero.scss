@@ -145,3 +145,10 @@
     width: 90% !important;
   }
 }
+@media only screen and (max-width: 450px) {
+  .hero {
+    h1 {
+        font-size: 1.9rem !important;
+    }
+  }
+}
