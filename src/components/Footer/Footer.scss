@@ -47,3 +47,29 @@
     gap: 0.5rem;
   }
 }
+
+@media only screen and (max-width: 520px) {
+  .footer {
+    display: grid;
+    grid-template-areas:
+     "company-location"
+     "custumer-service"
+     "social-media";
+     gap: 1rem;
+     .adress {
+      grid-area: company-location;
+      align-items: center;
+      .phone {
+        padding-top: 0;
+      }
+     }
+     .service {
+      grid-area: custumer-service;
+      align-items: center;
+      gap: .2rem;
+     }
+     .social-media {
+      grid-area: social-media;
+     }
+  }
+}

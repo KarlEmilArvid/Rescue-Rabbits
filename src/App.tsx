@@ -14,7 +14,7 @@ function App() {
   const [visibility, setVisibility] = useState<string>('overlay hideOverlay')
 
 
-  function addInterest(): number|null {
+  function addInterest(): number|null { // Lägger till i Interest counter när användaren submittar formuläret
     animals.map((animal) => {
       if (animal.id == pickedAnimal.id) {
         return animal.interested = animal.interested + 1;
@@ -29,7 +29,7 @@ function App() {
   }
 
   function showOverlay() {
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden'; // Gör så att användaren inte kan scrolla på mainsidan utan bara i overlayen
     setVisibility('overlay showOverlay')
   }
 // OM visibility 
