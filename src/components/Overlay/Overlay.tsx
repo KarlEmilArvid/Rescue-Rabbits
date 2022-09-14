@@ -26,7 +26,7 @@ const Overlay = ({
 }: Props) => {
   const [step, setStep] = useState<number>(1);
 
-  function handleClick(): void {
+  function handleClick(): void { // Byter innehåll beroende på vilken steg. När man går vidare ökar step med 1
     if (step === 3) {
       addInterest();
       hideOverlay();
@@ -44,7 +44,7 @@ const Overlay = ({
   }
 
   if (step === 2) {
-    //Formiläret   <--Skrivet av Linus
+    // Formulär overlay
     return (
       <section className={visibility}>
         <section className="overlay-container">
