@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import close from "../../assets/close.svg";
 import facebook from "../../assets/facebook.svg";
 import insta from "../../assets/insta.svg";
@@ -10,7 +10,15 @@ import "./Header.scss";
 
 const Header = () => {
   const [toggleContact, setToggleContact] = useState<boolean>(true) // Togglar kontakt overlay
-
+  
+  useEffect(() => { // Gör så att användaren inte kan scrolla på mainsidan utan bara i overlayen
+    if (toggleContact) {
+      document.body.style.overflow = 'unset';
+    } else {
+      document.body.style.overflow = 'hidden';
+    }
+  }, [toggleContact])
+  
   return (
     <header className="header">
       <div className="header-content">
