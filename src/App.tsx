@@ -12,7 +12,6 @@ function App() {
   const [animals, setAnimals] = useState<Animal[]>(jsonData.animals);
   const [pickedAnimal, setPickedAnimal] = useState<Animal>(jsonData.animals[1]);
   const [visibility, setVisibility] = useState<string>('overlay hideOverlay')
-  const [noScroll, setNoScroll] = useState<string>("")
 
   console.log(animals)
 
@@ -26,17 +25,17 @@ function App() {
   }
 
   function hideOverlay() {
-    setNoScroll('')
+    document.body.style.overflow = 'unset';
     setVisibility('overlay hideOverlay')
   }
 
   function showOverlay() {
-    setNoScroll('noScroll')
+    document.body.style.overflow = 'hidden';
     setVisibility('overlay showOverlay')
   }
 // OM visibility 
   return (
-    <div className={"App" + noScroll}>
+    <div className="App">
       <Header />
       <Hero />
       <Main showOverlay={showOverlay} animals={animals} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} />
