@@ -13,6 +13,14 @@ $success-color: #28a745;
   --fs-small: 14px;
 }
 
+%overlay {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  gap: 1rem;
+  width: 100%;
+}
+
 @mixin button-color {
 background-color: $blue-color;
 color: $white-color;

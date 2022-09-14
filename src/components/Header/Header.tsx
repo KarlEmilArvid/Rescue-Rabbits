@@ -35,7 +35,7 @@ const Header = () => {
                   <img src={close} alt="close button" onClick={() => { setToggleContact(!toggleContact) }} />
                 </figure>
               </header>
-              <main className="overlay__main overlay__main--column">
+              <main className="overlay__contact">
                 <figure>
                   <img src={Logo} alt="logo" />
                 </figure>
@@ -47,7 +47,7 @@ const Header = () => {
                     <p>204 24 Åkersberga</p>
                     <p className="phone">010-657 674</p>
                   </section>
-                  <section className="social-media">
+                  <section className="overlay__social--contact">
                     <h2>Sociala Medier</h2>
                     <div>
                       <a href="">
