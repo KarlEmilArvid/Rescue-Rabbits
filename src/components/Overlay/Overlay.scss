@@ -103,6 +103,7 @@
 @media screen and (max-width: 900px) {
   .overlay__container {
     width: 100% !important;
+    height: max-content !important;
     padding: 2rem 0 2rem 0 !important;
   }
   .overlay__main {
