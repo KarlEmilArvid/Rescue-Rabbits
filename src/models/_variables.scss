@@ -28,3 +28,12 @@ line-height: 29px;
 border-radius: 5px;
 cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+  :root {
+    --fs-header: 40px;
+    --fs-logo: 24px;
+    --fs-a: 16px;
+    --fs-text: 14px;
+  }
+}

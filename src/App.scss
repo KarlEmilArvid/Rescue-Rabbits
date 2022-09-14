@@ -12,6 +12,9 @@ body {
   background-color: $white-color;
   overflow-x: hidden;
 }
+.noScroll { 
+  overflow-x: hidden;
+}
 
 .App {
   margin: 0 auto;
@@ -40,14 +43,5 @@ a {
 .button-center {
   @include button;
   align-self: center;
-}
-
-@media screen and (max-width: 900px) {
-  :root {
-    --fs-header: 40px;
-    --fs-logo: 24px;
-    --fs-a: 16px;
-    --fs-text: 14px;
-  }
 }
 

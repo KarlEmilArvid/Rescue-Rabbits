@@ -46,9 +46,11 @@
     }
     .scroll-down {
       display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
       figure {
-        margin-left: 2rem;
-        height: 4rem;
+        margin-left: 8rem;
+        height: 7rem;
         svg {
           height: 100%;
         }
@@ -112,6 +114,7 @@
   .hero {
     display: flex;
     flex-direction: column;
+    height: max-content;
     h1 {
       margin: 0;
     }
@@ -125,6 +128,15 @@
     h1 {
       grid-column: 2 / 5;
       grid-row: 1;
+    }
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .hero .card {
+    .location {
+      p{
+        display: none;
+      }
     }
   }
 }
