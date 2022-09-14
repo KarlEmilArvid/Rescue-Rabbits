@@ -9,23 +9,29 @@ const Breadcrumbs = ({ step }: Props) => {
     return (
       <span className="breadcrumbs">
         <span className="active">1</span>
-        <span>2</span>
+        <div className="crumbs"></div>
+        <span className="mid">2</span>
+        <div className="crumbs"></div>
         <span>3</span>
       </span>
     )
   } else if (step === 2) {
     return (
       <span className="breadcrumbs">
-        <span>1</span>
+        <span className="active">1</span>
+        <div className="crumbs active"></div>
         <span className="active">2</span>
+        <div className="crumbs"></div>
         <span>3</span>
       </span>
     )
   } else {
     return (
       <span className="breadcrumbs">
-        <span>1</span>
-        <span>2</span>
+        <span className="active">1</span>
+        <div className="crumbs active"></div>
+        <span className="active">2</span>
+        <div className="crumbs active"></div>
         <span className="active">3</span>
       </span>
     )

@@ -13,7 +13,6 @@ function App() {
   const [pickedAnimal, setPickedAnimal] = useState<Animal>(jsonData.animals[1]);
   const [visibility, setVisibility] = useState<string>('overlay hideOverlay')
 
-  console.log(animals)
 
   function addInterest(): number|null {
     animals.map((animal) => {
