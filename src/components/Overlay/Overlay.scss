@@ -48,6 +48,7 @@
       padding: 1rem;
       gap: 1rem;
       width: 100%;
+      @extend %overlay;
       div {
         display: flex;
         gap: 1rem;

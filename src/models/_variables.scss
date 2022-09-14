@@ -19,6 +19,14 @@ color: $white-color;
 border: 1px solid $blue-color;
 }
 
+%overlay {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  gap: 1rem;
+  width: 100%;
+}
+
 @mixin button {
 @include button-color;
 padding: 0.7rem;
