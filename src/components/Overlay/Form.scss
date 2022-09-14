@@ -22,12 +22,20 @@
     font-size: var(--fs-text);
     padding-bottom: 0.5rem;
   }
-  .input__message {
+  .input-message {
     margin-top: 2rem;
   }
   button {
     width: 20rem;
   }
+}
+
+#button-green {
+  @include button;
+  background-color: $green-color;
+  border: 1px solid $green-color;
+  align-self: flex-end;
+  width: 12rem;
 }
 
 .form__footer {

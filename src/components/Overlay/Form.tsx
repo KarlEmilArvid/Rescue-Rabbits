@@ -33,28 +33,28 @@ const Form = ({ handleClick }: Props) => {
     return (
         <section className="form">
             <form onSubmit={handleSubmit}>
-                <div className="form-field">
+                <div>
                     <figure>
                         <img src={profile} alt="" />
                     </figure>
                     <input onChange={handleChange} value={formData.name} type="text" name="name" placeholder="För- och Efternamn" required />
                     <small></small>
                 </div>
-                <div className="form-field">
+                <div>
                     <figure>
                         <img src={phone} alt="" />
                     </figure>
                     <input onChange={handleChange} value={formData.phoneNumber} id="tel" type="tel" name="phoneNumber" placeholder="Telefonnummer" required />
                     <small></small>
                 </div>
-                <div className="form-field">
+                <div>
                     <figure>
                         <img src={mail} alt="" />
                     </figure>
                     <input onChange={handleChange} value={formData.email} id="email" type="email" name="email" placeholder="E-mail" required />
                     <small></small>
                 </div>
-                <div className="form-field input__message">
+                <div className="input-message">
                     <figure>
                         <img src={message} alt="" />
                     </figure>

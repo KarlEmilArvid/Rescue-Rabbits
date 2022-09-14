@@ -6,13 +6,13 @@ $error-color: #dc3545;
 $success-color: #28a745;
 
 :root {
-    --fs-header: 54px;
-    --fs-logo: 34px;
-    --fs-a: 24px;
-    --fs-text: 20px;
-    --fs-small: 14px;
-  }
- 
+  --fs-header: 54px;
+  --fs-logo: 34px;
+  --fs-a: 24px;
+  --fs-text: 20px;
+  --fs-small: 14px;
+}
+
 @mixin button-color {
 background-color: $blue-color;
 color: $white-color;
