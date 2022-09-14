@@ -24,6 +24,7 @@ const Form = ({ handleClick }: Props) => {
         handleClick();
     }
 
+    //Sparar varje knapptryckning
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         event.preventDefault();
         setFormData({ ...formData, [event.target.name]: event.target.value });
@@ -38,21 +39,18 @@ const Form = ({ handleClick }: Props) => {
                         <img src={profile} alt="" />
                     </figure>
                     <input onChange={handleChange} value={formData.name} type="text" name="name" placeholder="För- och Efternamn" required />
-                    <small></small>
                 </div>
                 <div>
                     <figure>
                         <img src={phone} alt="" />
                     </figure>
                     <input onChange={handleChange} value={formData.phoneNumber} id="tel" type="tel" name="phoneNumber" placeholder="Telefonnummer" required />
-                    <small></small>
                 </div>
                 <div>
                     <figure>
                         <img src={mail} alt="" />
                     </figure>
                     <input onChange={handleChange} value={formData.email} id="email" type="email" name="email" placeholder="E-mail" required />
-                    <small></small>
                 </div>
                 <div className="input-message">
                     <figure>

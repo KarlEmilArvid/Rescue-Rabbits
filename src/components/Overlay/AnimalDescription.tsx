@@ -1,4 +1,3 @@
-import locationPin from "../../assets/locationPin.svg";
 import { Animal } from "../../models/data";
 import "./AnimalDescription.scss";
 
