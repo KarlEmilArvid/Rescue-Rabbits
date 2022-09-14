@@ -16,18 +16,10 @@ const Footer = () => {
       <section className="social-media">
         <h2>Sociala Medier</h2>
         <div>
-          <a href="">
-            <img src={twitter} alt="twitter icon" />
-          </a>
-          <a href="">
-            <img src={insta} alt="instagram icon" />
-          </a>
-          <a href="">
-            <img src={facebook} alt="facebook icon" />
-          </a>
-          <a href="">
-            <img src={linkedin} alt="linked icon" />
-          </a>
+          <a href=""><img src={twitter} alt="twitter icon" /></a>
+          <a href=""><img src={insta} alt="instagram icon" /></a>
+          <a href=""><img src={facebook} alt="facebook icon" /></a>
+          <a href=""><img src={linkedin} alt="linked icon" /></a>
         </div>
       </section>
       <section className="service">

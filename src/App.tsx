@@ -1,20 +1,19 @@
-import { useState } from "react";
-import "./App.scss";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Main from "./components/Main/Main";
-import Overlay from "./components/Overlay/Overlay";
-import jsonData from "./data/animals.json";
-import { Animal } from "./models/data";
+import { useState } from "react"
+import "./App.scss"
+import Footer from "./components/Footer/Footer"
+import Header from "./components/Header/Header"
+import Hero from "./components/Hero/Hero"
+import Main from "./components/Main/Main"
+import Overlay from "./components/Overlay/Overlay"
+import jsonData from "./data/animals.json"
+import { Animal } from "./models/data"
 
 function App() {
   const [animals, setAnimals] = useState<Animal[]>(jsonData.animals);
   const [pickedAnimal, setPickedAnimal] = useState<Animal>(jsonData.animals[1]);
   const [visibility, setVisibility] = useState<string>('overlay hideOverlay')
 
-
-  function addInterest(): number|null { // Lägger till i Interest counter när användaren submittar formuläret
+  function addInterest(): number | null { // Lägger till i Interest counter när användaren submittar formuläret
     animals.map((animal) => {
       if (animal.id == pickedAnimal.id) {
         return animal.interested = animal.interested + 1;
@@ -32,7 +31,7 @@ function App() {
     document.body.style.overflow = 'hidden'; // Gör så att användaren inte kan scrolla på mainsidan utan bara i overlayen
     setVisibility('overlay showOverlay')
   }
-// OM visibility 
+  // OM visibility 
   return (
     <div className="App">
       <Header />
@@ -44,4 +43,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

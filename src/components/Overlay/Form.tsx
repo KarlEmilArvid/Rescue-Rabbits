@@ -4,7 +4,7 @@ import phone from "../../assets/phone.svg"
 import mail from "../../assets/mail.svg"
 import message from "../../assets/message.svg"
 import React, { useState } from "react"
-import { FormState } from "../../models/data";
+import { FormState } from "../../models/data"
 
 interface Props {
     handleClick: () => void;
@@ -20,7 +20,6 @@ const Form = ({ handleClick }: Props) => {
 
     const handleSubmit = (event: any) => { //måste ha typ any för att required ska fungera
         event.preventDefault()
-        console.log("test")
         handleClick();
     }
 
@@ -28,7 +27,6 @@ const Form = ({ handleClick }: Props) => {
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         event.preventDefault();
         setFormData({ ...formData, [event.target.name]: event.target.value });
-        console.log(formData)
     }
 
     return (
@@ -59,7 +57,7 @@ const Form = ({ handleClick }: Props) => {
                     <input onChange={handleChange} value={formData.message} id="message" type="text" name="message" placeholder="Meddelande (frivilligt)" />
                 </div>
                 <footer className="form-footer">
-                    <input type="submit" id="button-green" value="Skicka" /> 
+                    <input type="submit" id="button-green" value="Skicka" />
                 </footer>
             </form>
         </section>

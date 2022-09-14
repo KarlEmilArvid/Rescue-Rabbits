@@ -1,5 +1,5 @@
-import { Animal } from "../../models/data";
-import "./AnimalDescription.scss";
+import { Animal } from "../../models/data"
+import "./AnimalDescription.scss"
 
 interface Props {
   setPickedAnimal: (pickedAnimal: Animal) => void;
@@ -11,7 +11,7 @@ const AnimalDescription = ({ pickedAnimal }: Props) => {
     <section className="animal-info">
       <p>{pickedAnimal.desc}</p>
     </section>
-  );
-};
+  )
+}
 
-export default AnimalDescription;
+export default AnimalDescription

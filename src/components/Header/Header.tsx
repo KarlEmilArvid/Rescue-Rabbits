@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
-import close from "../../assets/close.svg";
-import facebook from "../../assets/facebook.svg";
-import insta from "../../assets/insta.svg";
-import linkedin from "../../assets/linkedin.svg";
-import Logo from "../../assets/Logo.svg";
-import twitter from "../../assets/twitter.svg";
-import "../Overlay/Overlay.scss";
-import "./Header.scss";
+import { useEffect, useState } from "react"
+import close from "../../assets/close.svg"
+import facebook from "../../assets/facebook.svg"
+import insta from "../../assets/insta.svg"
+import linkedin from "../../assets/linkedin.svg"
+import Logo from "../../assets/Logo.svg"
+import twitter from "../../assets/twitter.svg"
+import "../Overlay/Overlay.scss"
+import "./Header.scss"
 
 const Header = () => {
   const [toggleContact, setToggleContact] = useState<boolean>(true) // Togglar kontakt overlay
@@ -22,9 +22,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-content">
-        <figure>
-          <img src={Logo} alt="" />
-        </figure>
+        <figure><img src={Logo} alt="" /></figure>
         <h1>Rescue Rabbits</h1>
         <a onClick={() => setToggleContact(!toggleContact)}> Kontakta oss</a>
         {toggleContact ? (<></>) : (
@@ -36,9 +34,7 @@ const Header = () => {
                 </figure>
               </header>
               <main className="overlay__contact">
-                <figure>
-                  <img src={Logo} alt="logo" />
-                </figure>
+                <figure><img src={Logo} alt="logo" /></figure>
                 <h2 className='animal-info-name'>Kontakta oss</h2>
                 <div className="contact-content">
                   <section className="adress">
@@ -50,18 +46,10 @@ const Header = () => {
                   <section className="overlay__social--contact">
                     <h2>Sociala Medier</h2>
                     <div>
-                      <a href="">
-                        <img src={twitter} alt="twitter icon" />
-                      </a>
-                      <a href="">
-                        <img src={insta} alt="instagram icon" />
-                      </a>
-                      <a href="">
-                        <img src={facebook} alt="facebook icon" />
-                      </a>
-                      <a href="">
-                        <img src={linkedin} alt="linked icon" />
-                      </a>
+                      <a href=""><img src={twitter} alt="twitter icon" /></a>
+                      <a href=""><img src={insta} alt="instagram icon" /></a>
+                      <a href=""><img src={facebook} alt="facebook icon" /></a>
+                      <a href=""><img src={linkedin} alt="linked icon" /></a>
                     </div>
                   </section>
                 </div>

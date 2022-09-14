@@ -1,7 +1,7 @@
-import arrow from "../../assets/Arrow.svg";
-import map from "../../assets/MapPin.svg";
-import { Animal } from "../../models/data";
-import "./AnimalCard.scss";
+import arrow from "../../assets/Arrow.svg"
+import map from "../../assets/MapPin.svg"
+import { Animal } from "../../models/data"
+import "./AnimalCard.scss"
 
 interface Props {
   animal: Animal;
@@ -10,12 +10,7 @@ interface Props {
   showOverlay: () => void;
 }
 
-const AnimalCard = ({
-  showOverlay,
-  animal,
-  pickedAnimal,
-  setPickedAnimal,
-}: Props) => {
+const AnimalCard = ({ showOverlay, animal, pickedAnimal, setPickedAnimal }: Props) => {
   function handleClick(): void { // Togglar Overlay
     showOverlay();
     setPickedAnimal(animal);
@@ -40,13 +35,10 @@ const AnimalCard = ({
         </section>
         <p className="age"> {animal.age} år</p>
         <p className="date">{animal.dateAdded}</p>
-        <button className="card-button">
-          Läs mer
-          <img src={arrow} />
-        </button>
+        <button className="card-button">Läs mer<img src={arrow} /></button>
       </section>
     </section>
-  );
-};
+  )
+}
 
-export default AnimalCard;
+export default AnimalCard

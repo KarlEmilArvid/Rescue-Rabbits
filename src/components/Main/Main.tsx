@@ -18,14 +18,14 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) =>
   const [animalsToShow, setanimalsToShow] = useState<Animal[]>(animals.filter(animal => animal.type.toLowerCase().includes(query) || animal.location.toLowerCase().includes(query)))
   const [showButton, setshowButton] = useState<boolean>(true)
 
-  const loadMoreCards: () => void = () => { 
+  const loadMoreCards: () => void = () => {
     setLoad(load + cardsShown);
   }
 
   useEffect(() => { // Uppdaterar vilka och hur många djur som ska visas
     setanimalsToShow(animals.filter(animal => animal.type.toLowerCase().includes(query) || animal.location.toLowerCase().includes(query)));
     setLoad(cardsShown)
-  }, [query]);
+  }, [query])
 
   useEffect(() => { // Togglar Visa mer knappen
     if (animalsToShow.length == load || animalsToShow.length < load) {
@@ -33,33 +33,27 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) =>
     } else {
       setshowButton(true)
     }
-  }, [load]);
-  
+  }, [load])
 
   return (
     <main className="main">
       <section className="search-field">
         <section className="search-wrapper">
-          <input
-            type="text"
-            placeholder="Sök på plats eller djurtyp"
-            className="search"
-            onChange={e => setQuery(e.target.value)} />
+          <input type="text" placeholder="Sök på plats eller djurtyp" className="search" onChange={e => setQuery(e.target.value)} />
           <img className="search-icon" src={searchIcon} alt="" />
         </section>
       </section>
       <section id="animal-list">
         {animalsToShow.slice(0, load)?.map((animal) => (
-            <AnimalCard showOverlay={showOverlay} animal={animal} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} key={animal.id} />
-          ))}
+          <AnimalCard showOverlay={showOverlay} animal={animal} pickedAnimal={pickedAnimal} setPickedAnimal={setPickedAnimal} key={animal.id} />))}
       </section>
       <div className="button-wrapper">
         {showButton ? (
           <button onClick={loadMoreCards}>Läs in fler</button>
-        ):(<></>)}
+        ) : (<></>)}
       </div>
     </main>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main
