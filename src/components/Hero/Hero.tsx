@@ -88,7 +88,7 @@ const Hero = () => {
         </p>
         <p>
           Vi kämpar för att varje djur ska ha en trygg och hälsosam framtid. Det
-          gör vi genom att skicka ut våra vetrinärer och göra en hälsokontroll
+          gör vi genom att skicka ut våra veterinärer att göra en hälsokontroll
           på djuret innan det kommer upp på hemsidan.
         </p>
         <br />
