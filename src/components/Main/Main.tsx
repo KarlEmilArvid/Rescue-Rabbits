@@ -25,7 +25,7 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) =>
         <section className="search-wrapper">
           <input
             type="text"
-            placeholder="Sök på plats eller typ av djur"
+            placeholder="Sök på plats eller djurtyp"
             className="search"
             onChange={e => setQuery(e.target.value)} />
           <img className="search-icon" src={searchIcon} alt="" />
