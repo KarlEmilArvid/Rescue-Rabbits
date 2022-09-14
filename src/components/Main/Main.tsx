@@ -33,7 +33,6 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) =>
     } else {
       setshowButton(true)
     }
-    console.log(load)
   }, [load]);
   
 
