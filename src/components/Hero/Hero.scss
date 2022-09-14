@@ -46,9 +46,11 @@
     }
     .scroll-down {
       display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
       figure {
-        margin-left: 2rem;
-        height: 4rem;
+        margin-left: 8rem;
+        height: 7rem;
         svg {
           height: 100%;
         }
