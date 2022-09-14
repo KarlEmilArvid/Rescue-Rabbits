@@ -1,15 +1,15 @@
 import { useState } from "react";
-import Logo from "../../assets/Logo.svg"
-import close from "../../assets/close.svg"
-import "./Header.scss"
-import "../Overlay/Overlay.scss"
-import facebook from "../../assets/facebook.svg"
-import insta from "../../assets/insta.svg"
-import linkedin from "../../assets/linkedin.svg"
-import twitter from "../../assets/twitter.svg"
+import close from "../../assets/close.svg";
+import facebook from "../../assets/facebook.svg";
+import insta from "../../assets/insta.svg";
+import linkedin from "../../assets/linkedin.svg";
+import Logo from "../../assets/Logo.svg";
+import twitter from "../../assets/twitter.svg";
+import "../Overlay/Overlay.scss";
+import "./Header.scss";
 
 const Header = () => {
-  const [toggleContact, setToggleContact] = useState<boolean>(true)
+  const [toggleContact, setToggleContact] = useState<boolean>(true) // Togglar kontakt overlay
 
   return (
     <header className="header">
