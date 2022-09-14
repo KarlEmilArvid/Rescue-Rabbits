@@ -59,8 +59,6 @@ const Main = ({ showOverlay, animals, setPickedAnimal, pickedAnimal }: Props) =>
         {showButton ? (
           <button onClick={loadMoreCards}>Läs in fler</button>
         ):(<></>)}
-        {/* {showButton === 6 || 12 || 18 || 24 && (<button onClick={loadMoreCards}>Läs in fler</button>)} */}
-        {/* {load < animals?.length && (<button onClick={loadMoreCards}>Läs in fler</button>)} */}
       </div>
     </main>
   );
