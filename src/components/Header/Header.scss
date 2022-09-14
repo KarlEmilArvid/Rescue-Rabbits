@@ -84,3 +84,18 @@
     }
   }
 }
+
+@media only screen and (max-width: 440px) {
+  .header-content {
+    figure {
+      width: 3rem;
+    }
+    img {
+      width: 100%;
+    }
+    h1 {
+      margin-left: .2rem;
+      font-size: 20px;
+    }
+  }
+}

@@ -140,3 +140,8 @@
     }
   }
 }
+@media only screen and (max-height: 750px) {
+  .hero .card {
+    width: 90% !important;
+  }
+}
